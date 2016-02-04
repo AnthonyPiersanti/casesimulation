@@ -3,96 +3,123 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		 <script type="text/javascript" src="caseopen.js"></script>
 
+		 <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="style.css" type="text/css">
+
 
 		 <title>CSGO Case Opening Simulation</title>
 	</head>
 
 	<body>
 
-		<h1>CSGO Case Opening Simulation</h1>
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<h1>CSGO Case Opening Simulation</h1>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
 
 
 
-		<div id = "pick_case">
+			<div id="pick_case">
+				<div class="row">
+					<div class="col-sm-2"></div>
+						<div class="col-sm-8">
+							<h4>Step 1: Pick a Case to open</h4>
+						</div>
+					<div class="col-sm-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<input type="radio" id="chroma2" value="chroma2" checked> Chroma 2 Case<br>
+					</div>
+					<div class="col-sm-2"></div>
 
-			<h4>Step 1: Pick a Case to open</h4>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-sm-2"></div>
+					<div class="col-sm-8">
+						<h4>Step 2: Start Simulation</h4>
+					</div>
+				<div class="col-sm-2"></div>
+			</div>
 
+			<div id="money">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-2">
+						<p id="opened">Cases Opened</p>
+						<p id="opened_val">0</p>
+					</div>
+					<div class="col-sm-2">
+						<p id="spent"> Money Spent</p>
+						<p id="spent_val">$0 USD</p>
+					</div>
+					<div class="col-sm-2">
+						<p id="value"> Value of Skins</p>
+						<p id="value_val">$0 USD</p>
+					</div>
+					<div class="col-sm-2">
+						<p id="profit"> Profit</p>
+						<p id="profit_val">$0 USD</p>
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
 
-			<input type="radio" id="chroma2" value="chroma2" checked> Chroma 2 Case<br>
+			<div id = "weapons">
+				<div class="row">
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3">
+						<p id="milspec">Mil-Spec: </p>
+						<p id="milspec_val">0</p>
+						<br>
+						<p id="restricted">Restricted: </p>
+						<p id="restricted_val">0</p>
+						<br>
+						<p id="classified">Classified: </p>
+						<p id="classified_val">0</p>
+						<br>
+						<p id="covert">Covert: </p>
+						<p id="covert_val">0</p>
+						<br>
+						<p id="knife">Knife: </p>
+						<p id="knife_val">0</p>
+					</div>
+					<div class="col-sm-3">
+						<p id="milspec_stat">Mil-Spec StatTrak: </p>
+						<p id="milspec_stat_val">0</p>
+						<br>
+						<p id="restricted_stat">Restricted StatTrak: </p>
+						<p id="restricted_stat_val">0</p>
+						<br>
+						<p id="classified_stat">Classified StatTrak: </p>
+						<p id="classified_stat_val">0</p>
+						<br>
+						<p id="covert_stat">Covert StatTrak: </p>
+						<p id="covert_stat_val">0</p>
+						<br>
+						<p id="knife_stat">Knife StatTrak: </p>
+						<p id="knife_stat_val">0</p>
+					</div>
+					<div class="col-sm-3"></div>
+				</div>
+			</div>
 
-		</div>
-
-		<h4>Step 2: Start Simulation</h4>
-
-
-		<div id = "money" style="width:15%; margin-left:1%; float:left;">
-
-			<p id="spent" style="display: inline-block">Money Spent: $</p>
-			<p id="spent_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="value" style="display: inline-block">Value of Skins: $</p>
-			<p id="value_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="profit" style="display: inline-block">Profit: $</p>
-			<p id="profit_val" style="display: inline-block">0</p>
-
-		</div>
-
-
-
-		<div id = "weapons" style="width:15%; margin-left:5%; float:left;">
-
-			<p id="opened" style="display: inline-block">Cases Opened: </p>
-			<p id="opened_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="milspec" style="display: inline-block">Mil-Spec: </p>
-			<p id="milspec_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="restricted" style="display: inline-block">Restricted: </p>
-			<p id="restricted_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="classified" style="display: inline-block">Classified: </p>
-			<p id="classified_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="covert" style="display: inline-block">Covert: </p>
-			<p id="covert_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="knife" style="display: inline-block">Knife: </p>
-			<p id="knife_val" style="display: inline-block">0</p>
-
-
-
-		</div>
-		
-		<div id = "weapons" style="margin-top:5%; margin-right:15%;">
-
-			<p id="milspec_stat" style="display: inline-block">Mil-Spec StatTrak: </p>
-			<p id="milspec_stat_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="restricted_stat" style="display: inline-block">Restricted StatTrak: </p>
-			<p id="restricted_stat_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="classified_stat" style="display: inline-block">Classified StatTrak: </p>
-			<p id="classified_stat_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="covert_stat" style="display: inline-block">Covert StatTrak: </p>
-			<p id="covert_stat_val" style="display: inline-block">0</p>
-			<br></br>
-			<p id="knife_stat" style="display: inline-block">Knife StatTrak: </p>
-			<p id="knife_stat_val" style="display: inline-block">0</p>
-
-
-
-		</div>
-		
-
-
-		<br></br>
-
-
-		<div>
-		<button id="start" onclick="startPause()" >Start</button>
-		<button id="reset" onclick="reset()" >Reset</button>
+			<div class="text-center">
+				<button id="start" onclick="startPause()" class="btn btn-primary btn-lg">Start</button>
+				<button id="reset" onclick="reset()" class="btn btn-default btn-lg" >Reset</button>
+			</div>
 		</div>
 
 	</body>

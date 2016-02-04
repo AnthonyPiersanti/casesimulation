@@ -105,7 +105,7 @@ function openCase(){
 	document.getElementById("opened_val").innerHTML = casesOpened;
 	
 	spent+=2.50;
-	document.getElementById("spent_val").innerHTML = spent;
+	document.getElementById("spent_val").innerHTML = "$"+spent+" USD";
 	
 	var openedVal = 0;
 	
@@ -185,9 +185,9 @@ function openCase(){
 	}
 	
 	
-	document.getElementById("value_val").innerHTML = skinval.toFixed(2);
+	document.getElementById("value_val").innerHTML = "$"+skinval.toFixed(2)+" USD";
 	profit = skinval - spent;
-	document.getElementById("profit_val").innerHTML = profit.toFixed(2);
+	document.getElementById("profit_val").innerHTML = "$"+profit.toFixed(2)+" USD";
 	
 			
 	

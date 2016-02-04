@@ -1,0 +1,26 @@
+h1.center{
+	text-align: center;
+}
+
+#spent, #profit, #value, #opened{
+	font-size: 20;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+}
+
+#spent_val, #profit_val, #value_val, #opened_val{
+	font-size: 25;
+	text-align: center;
+}
+
+#milspec_val, #restricted_val, #classified_val, #covert_val, #knife_val, #milspec_stat_val, #restricted_stat_val, #classified_stat_val, #covert_stat_val, #knife_stat_val{
+	font-weight: bold;
+	font-size: 18;
+	display: inline-block;
+}
+
+#milspec, #restricted, #classified, #covert, #knife, #milspec_stat, #restricted_stat, #classified_stat, #covert_stat, #knife_stat{
+	font-size: 20;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	display: inline-block;
+}
