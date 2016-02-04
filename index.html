@@ -1,17 +1,9 @@
 <html>
 	<head>
-		<script>
-		  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-57209117-2', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="casevalues.js"></script>
 		 <script type="text/javascript" src="caseopen.js"></script>
+		 
 
 		 <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -50,7 +42,8 @@
 				<div class="row">
 					<div class="col-sm-2"></div>
 					<div class="col-sm-8">
-						<input type="radio" id="chroma2" value="chroma2" checked> Chroma 2 Case<br>
+							<input type="radio" name="cases" value="chroma2" onclick="getCaseArray()"> Chroma 2 Case<br>
+							<input type="radio" name="cases" onclick="getCaseArray()" value="huntsman" checked> Huntsman Case<br>
 					</div>
 					<div class="col-sm-2"></div>
 
@@ -140,6 +133,17 @@
 				Made by @lucasmarcelli and @anthonypiersanti
 			</div>
 		</div>
+
+		<script>
+		  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-57209117-2', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</body>
 
 </html>
