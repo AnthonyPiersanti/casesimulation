@@ -17,20 +17,6 @@ var covert_stat = 0;
 var knife_stat = 0;
 
 var running = 0;
-
-var chroma2 = new Array();
-var chroma2ST = new Array();
-chroma2["co"] = 14.77;
-chroma2["cl"] = 2.37;
-chroma2["r"] = 0.55;
-chroma2["m"] = 0.19;
-chroma2ST["co_s"] = 70.10;
-chroma2ST["cl_s"] = 9.79;
-chroma2ST["r_s"] = 2.72;
-chroma2ST["m_s"] = 1.26;
-chroma2ST["k"] = 150;
-chroma2ST["k_s"] = 250;
-
 var caseArray = huntsman;
 var caseArrayST = huntsman_st;
   
@@ -232,9 +218,8 @@ function getCaseArray(){
 	}
 	
 	if (cval=="chroma2"){
-		caseArray = huntsman;
-		caseArrayST = huntsman_st;
-		
+		caseArray = chroma2;
+		caseArrayST = chroma2_st;
 	}
 	
 }
