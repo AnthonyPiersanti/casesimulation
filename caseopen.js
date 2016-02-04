@@ -19,16 +19,20 @@ var knife_stat = 0;
 var running = 0;
 
 var chroma2 = new Array();
+var chroma2ST = new Array();
 chroma2["co"] = 14.77;
 chroma2["cl"] = 2.37;
 chroma2["r"] = 0.55;
 chroma2["m"] = 0.19;
-chroma2["co_s"] = 70.10;
-chroma2["cl_s"] = 9.79;
-chroma2["r_s"] = 2.72;
-chroma2["m_s"] = 1.26;
-chroma2["k"] = 150;
-chroma2["k_s"] = 250;
+chroma2ST["co_s"] = 70.10;
+chroma2ST["cl_s"] = 9.79;
+chroma2ST["r_s"] = 2.72;
+chroma2ST["m_s"] = 1.26;
+chroma2ST["k"] = 150;
+chroma2ST["k_s"] = 250;
+
+var caseArray = huntsman;
+var caseArrayST = huntsman_st;
   
 
 function startPause(){
@@ -118,12 +122,14 @@ function openCase(){
 			var s = isStatTrak();
 			if (s == 1){
 				knife_stat+=1;
-				skinval+= chroma2["k_s"];
+				var wear = getWear();
+				skinval+= caseArrayST["knife"][wear];
 				document.getElementById("knife_stat_val").innerHTML = knife_stat;
 				
 			}else{
 				knife+=1;
-				skinval+= chroma2["k"];
+				var wear = getWear();
+				skinval+= caseArray["knife"][wear];
 				document.getElementById("knife_val").innerHTML = knife;
 				
 			}
@@ -134,11 +140,13 @@ function openCase(){
 			var s = isStatTrak();
 			if (s == 1){
 				covert_stat+=1;
-				skinval+= chroma2["co_s"];
+				var wear = getWear();
+				skinval+= caseArrayST["covert"][wear];
 				document.getElementById("covert_stat_val").innerHTML = covert_stat;
 			}else{
 				covert+=1;
-				skinval+= chroma2["co"];
+				var wear = getWear();
+				skinval+= caseArray["covert"][wear];
 				document.getElementById("covert_val").innerHTML = covert;
 				
 			}
@@ -148,11 +156,13 @@ function openCase(){
 			var s = isStatTrak();
 			if (s == 1){
 				classified_stat+=1;
-				skinval+= chroma2["cl_s"];
+				var wear = getWear();
+				skinval+= caseArrayST["classified"][wear];
 				document.getElementById("classified_stat_val").innerHTML = classified_stat;
 			}else{
 				classified+=1;
-				skinval+= chroma2["cl"];
+				var wear = getWear();
+				skinval+= caseArray["classified"][wear];
 				document.getElementById("classified_val").innerHTML = classified;
 				
 			}
@@ -162,11 +172,13 @@ function openCase(){
 			var s = isStatTrak();
 			if (s == 1){
 				restricted_stat+=1;
-				skinval+= chroma2["r_s"];
+				var wear = getWear();
+				skinval+= caseArrayST["restricted"][wear]
 				document.getElementById("restricted_stat_val").innerHTML = restricted_stat;
 			}else{
 				restricted+=1;
-				skinval+= chroma2["r"];
+				var wear = getWear();
+				skinval+= caseArray["restricted"][wear];
 				document.getElementById("restricted_val").innerHTML = restricted;
 				
 			}
@@ -176,11 +188,13 @@ function openCase(){
 			var s = isStatTrak();
 			if (s == 1){
 				milspec_stat+=1;
-				skinval+= chroma2["m_s"];
+				var wear = getWear();
+				skinval+= caseArrayST["milspec"][wear];
 				document.getElementById("milspec_stat_val").innerHTML = milspec_stat;
 			}else{
 				milspec+=1;
-				skinval+= chroma2["m"];
+				var wear = getWear();
+				skinval+= caseArray["milspec"][wear];
 				document.getElementById("milspec_val").innerHTML = milspec;
 				
 			}
@@ -206,4 +220,42 @@ function isStatTrak(){
 	}else{
 		return 0;
 	}
+}
+
+function getCaseArray(){
+	cval =$('input[name="cases"]:checked').val();
+	
+	if (cval=="huntsman"){
+		caseArray = huntsman;
+		caseArrayST = huntsman_st;
+		
+	}
+	
+	if (cval=="chroma2"){
+		caseArray = huntsman;
+		caseArrayST = huntsman_st;
+		
+	}
+	
+}
+
+function getWear(){
+	var n = Math.floor(Math.random() * 5) + 1;
+	if (n==1){
+		return "fn";
+	}
+	if (n==2){
+		return "mw";
+	}
+	if (n==3){
+		return "ft";
+	}
+	if (n==4){
+		return "ww";
+	}
+	if (n==5){
+		return "bs";
+	}
+	
+	
 }
