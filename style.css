@@ -2,15 +2,25 @@ h1.center{
 	text-align: center;
 }
 
+body{
+	background-color: #1E272F;
+	color: white;
+	height: 100%;
+}
+
 #spent, #profit, #value, #opened{
-	font-size: 20;
+	font-size: x-large;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	text-align: center;
+	padding-bottom: 0px;
+	margin-bottom: 2px;
+
 }
 
 #spent_val, #profit_val, #value_val, #opened_val{
-	font-size: 25;
+	font-size: xx-large;
 	text-align: center;
+	padding-top: 3px;
 }
 
 #milspec_val, #restricted_val, #classified_val, #covert_val, #knife_val, #milspec_stat_val, #restricted_stat_val, #classified_stat_val, #covert_stat_val, #knife_stat_val{
@@ -23,4 +33,13 @@ h1.center{
 	font-size: 20;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	display: inline-block;
+}
+
+#weapons{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#start, #reset{
+	margin: 5px;
 }
