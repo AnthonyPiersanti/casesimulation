@@ -107,7 +107,7 @@ function openCase(){
 		document.getElementById("opened_val").innerHTML = casesOpened;
 		
 		spent+=2.50;
-		document.getElementById("spent_val").innerHTML = "$"+spent+" USD";
+		document.getElementById("spent_val").innerHTML = "$"+spent.toFixed(2)+" USD";
 		
 		var openedVal = 0;
 		
