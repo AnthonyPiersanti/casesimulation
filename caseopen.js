@@ -48,11 +48,11 @@ function startPause(){
 function reset(){
 	running = 0;
 	spent = 0;
-	document.getElementById("spent_val").innerHTML = 0;
+	document.getElementById("spent_val").innerHTML = "$"+0+" USD";
 	skinval = 0;
-	document.getElementById("value_val").innerHTML = 0;
+	document.getElementById("value_val").innerHTML = "$"+0+" USD";
 	profit = 0;
-	document.getElementById("profit_val").innerHTML = 0;
+	document.getElementById("profit_val").innerHTML = "$"+0+" USD";
 	casesOpened = 0;
 	document.getElementById("opened_val").innerHTML = 0;
 	milspec = 0;
@@ -100,96 +100,98 @@ function increment(){
 }
 
 function openCase(){
+
+	if(running == 1){
 	
-	casesOpened+=1;
-	document.getElementById("opened_val").innerHTML = casesOpened;
-	
-	spent+=2.50;
-	document.getElementById("spent_val").innerHTML = "$"+spent+" USD";
-	
-	var openedVal = 0;
-	
-	var prob = Math.floor(Math.random() * 10001) + 1;
-	
-	//knife
-	if (prob >=1 && prob <=21){
-		var s = isStatTrak();
-		if (s == 1){
-			knife_stat+=1;
-			skinval+= chroma2["k_s"];
-			document.getElementById("knife_stat_val").innerHTML = knife_stat;
+		casesOpened+=1;
+		document.getElementById("opened_val").innerHTML = casesOpened;
+		
+		spent+=2.50;
+		document.getElementById("spent_val").innerHTML = "$"+spent+" USD";
+		
+		var openedVal = 0;
+		
+		var prob = Math.floor(Math.random() * 10001) + 1;
+		
+		//knife
+		if (prob >=1 && prob <=21){
+			var s = isStatTrak();
+			if (s == 1){
+				knife_stat+=1;
+				skinval+= chroma2["k_s"];
+				document.getElementById("knife_stat_val").innerHTML = knife_stat;
+				
+			}else{
+				knife+=1;
+				skinval+= chroma2["k"];
+				document.getElementById("knife_val").innerHTML = knife;
+				
+			}
 			
+			
+		//covert	
+		}else if (prob >=22 && prob <=79){
+			var s = isStatTrak();
+			if (s == 1){
+				covert_stat+=1;
+				skinval+= chroma2["co_s"];
+				document.getElementById("covert_stat_val").innerHTML = covert_stat;
+			}else{
+				covert+=1;
+				skinval+= chroma2["co"];
+				document.getElementById("covert_val").innerHTML = covert;
+				
+			}
+			
+		//classified	
+		}else if (prob >=80 && prob <=395){
+			var s = isStatTrak();
+			if (s == 1){
+				classified_stat+=1;
+				skinval+= chroma2["cl_s"];
+				document.getElementById("classified_stat_val").innerHTML = classified_stat;
+			}else{
+				classified+=1;
+				skinval+= chroma2["cl"];
+				document.getElementById("classified_val").innerHTML = classified;
+				
+			}
+			
+		//restricted
+		}else if (prob >=396 && prob <=2021){
+			var s = isStatTrak();
+			if (s == 1){
+				restricted_stat+=1;
+				skinval+= chroma2["r_s"];
+				document.getElementById("restricted_stat_val").innerHTML = restricted_stat;
+			}else{
+				restricted+=1;
+				skinval+= chroma2["r"];
+				document.getElementById("restricted_val").innerHTML = restricted;
+				
+			}
+		
+		//mil-spec
 		}else{
-			knife+=1;
-			skinval+= chroma2["k"];
-			document.getElementById("knife_val").innerHTML = knife;
-			
+			var s = isStatTrak();
+			if (s == 1){
+				milspec_stat+=1;
+				skinval+= chroma2["m_s"];
+				document.getElementById("milspec_stat_val").innerHTML = milspec_stat;
+			}else{
+				milspec+=1;
+				skinval+= chroma2["m"];
+				document.getElementById("milspec_val").innerHTML = milspec;
+				
+			}
 		}
 		
 		
-	//covert	
-	}else if (prob >=22 && prob <=79){
-		var s = isStatTrak();
-		if (s == 1){
-			covert_stat+=1;
-			skinval+= chroma2["co_s"];
-			document.getElementById("covert_stat_val").innerHTML = covert_stat;
-		}else{
-			covert+=1;
-			skinval+= chroma2["co"];
-			document.getElementById("covert_val").innerHTML = covert;
-			
-		}
+		document.getElementById("value_val").innerHTML = "$"+skinval.toFixed(2)+" USD";
+		profit = skinval - spent;
+		document.getElementById("profit_val").innerHTML = "$"+profit.toFixed(2)+" USD";
 		
-	//classified	
-	}else if (prob >=80 && prob <=395){
-		var s = isStatTrak();
-		if (s == 1){
-			classified_stat+=1;
-			skinval+= chroma2["cl_s"];
-			document.getElementById("classified_stat_val").innerHTML = classified_stat;
-		}else{
-			classified+=1;
-			skinval+= chroma2["cl"];
-			document.getElementById("classified_val").innerHTML = classified;
-			
 		}
-		
-	//restricted
-	}else if (prob >=396 && prob <=2021){
-		var s = isStatTrak();
-		if (s == 1){
-			restricted_stat+=1;
-			skinval+= chroma2["r_s"];
-			document.getElementById("restricted_stat_val").innerHTML = restricted_stat;
-		}else{
-			restricted+=1;
-			skinval+= chroma2["r"];
-			document.getElementById("restricted_val").innerHTML = restricted;
-			
-		}
-	
-	//mil-spec
-	}else{
-		var s = isStatTrak();
-		if (s == 1){
-			milspec_stat+=1;
-			skinval+= chroma2["m_s"];
-			document.getElementById("milspec_stat_val").innerHTML = milspec_stat;
-		}else{
-			milspec+=1;
-			skinval+= chroma2["m"];
-			document.getElementById("milspec_val").innerHTML = milspec;
-			
-		}
-	}
-	
-	
-	document.getElementById("value_val").innerHTML = "$"+skinval.toFixed(2)+" USD";
-	profit = skinval - spent;
-	document.getElementById("profit_val").innerHTML = "$"+profit.toFixed(2)+" USD";
-	
-			
 	
 
 
