@@ -1,7 +1,9 @@
 <html>
 	<head>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="casevalues.js"></script>
 		 <script type="text/javascript" src="caseopen.js"></script>
+		 
 
 		 <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -40,7 +42,8 @@
 				<div class="row">
 					<div class="col-sm-2"></div>
 					<div class="col-sm-8">
-						<input type="radio" id="chroma2" value="chroma2" checked> Chroma 2 Case<br>
+							<input type="radio" name="cases" value="chroma2" onclick="getCaseArray()"> Chroma 2 Case<br>
+							<input type="radio" name="cases" onclick="getCaseArray()" value="huntsman" checked> Huntsman Case<br>
 					</div>
 					<div class="col-sm-2"></div>
 
