@@ -1,5 +1,12 @@
 // File that will store the values for cases
 
+var case_prices = {
+  huntsman : 0.97,
+  chroma2 : 0.12,
+  csgo1 : 6.86
+
+};
+
 var chroma2_milspec = {
   fn : 0.428,
   mw : 0.275,
@@ -300,7 +307,6 @@ var chroma2_st = {
 };
 
 var huntsman = {
-
   covert : hunts_covert,
   classified : hunts_classified,
   restricted : hunts_restricted,

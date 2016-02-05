@@ -19,6 +19,8 @@ var knife_stat = 0;
 var running = 0;
 var caseArray = chroma2;
 var caseArrayST = chroma2_st;
+
+var casePrice = case_prices;
   
 
 function startPause(){
@@ -97,6 +99,14 @@ function openCase(){
 		document.getElementById("opened_val").innerHTML = casesOpened;
 		
 		spent+=2.50;
+		cval =$('input[name="cases"]:checked').val();
+		if(cval == "huntsman"){
+			spent += casePrice["huntsman"];
+		}else if(cval == "chroma2"){
+			spent += casePrice["chroma2"];
+		}else if(cval == "csgo1"){
+			spent += casePrice["csgo1"];
+		}
 		document.getElementById("spent_val").innerHTML = "$"+spent.toFixed(2)+" USD";
 		
 		var openedVal = 0;
@@ -229,21 +239,32 @@ function getCaseArray(){
 	
 }
 
+function addPrices(){
+	var chroma2_label = $("#chroma2").next();
+	chroma2_label.append(" $" + casePrice["chroma2"] + " USD");
+
+	var huntsman_label = $("#huntsman").next();
+	huntsman_label.append(" $" + casePrice["huntsman"] + " USD");
+
+	var csgo1_label = $("#csgo1").next();
+	csgo1_label.append(" $" + casePrice["csgo1"] + " USD");
+}
+
 function getWear(){
-	var n = Math.floor(Math.random() * 5) + 1;
-	if (n==1){
+	var n = Math.random();
+	if (n <= 0.07){
 		return "fn";
 	}
-	if (n==2){
+	if (n > 0.07 && n <= 0.15){
 		return "mw";
 	}
-	if (n==3){
+	if (n > 0.15 && n <= 0.37){
 		return "ft";
 	}
-	if (n==4){
+	if (n > 0.37 && n <= 0.44){
 		return "ww";
 	}
-	if (n==5){
+	if (n > 0.44){
 		return "bs";
 	}
 	
