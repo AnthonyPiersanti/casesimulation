@@ -183,6 +183,106 @@ var hunts_knife_st= {
 
 };
 
+var csgo1_milspec = {
+
+  fn : 3.465,
+  mw : 0.8466666667,
+  ft : 0.61,
+  ww : 0.77,
+  bs : 0.55
+  
+};
+
+var csgo1_restricted = {
+
+  fn : 5.606666666,
+  mw : 5.9466666667,
+  ft : 4.945,
+  ww : 4.945,
+  bs : 4.945
+
+};
+
+var csgo1_classified= {
+
+  fn : 28.615,
+  mw : 20.91,
+  ft : 23.16,
+  ww : 22.27,
+  bs : 20.17
+
+};
+
+var csgo1_covert= {
+
+  fn : 46.81,
+  mw : 54.42,
+  ft : 46.81,
+  ww : 54.42,
+  bs : 46.81
+
+};
+
+var csgo1_knife= {
+
+  fn : 235.4766666667,
+  mw : 157.8533333333,
+  ft : 131.56,
+  ww : 126.1266666667,
+  bs : 120.0466666667
+
+};
+
+var csgo1_milspec_st = {
+
+  fn : 21.105,
+  mw : 2.5266666667,
+  ft : 1.615,
+  ww : 1.8,
+  bs : 1.49
+  
+};
+
+var csgo1_restricted_st = {
+
+  fn : 17.6833333333,
+  mw : 19.87,
+  ft : 14.09,
+  ww : 14.09,
+  bs : 14.09
+
+};
+
+var csgo1_classified_st= {
+
+  fn : 173.24,
+  mw : 125.25,
+  ft : 109.76,
+  ww : 81.34,
+  bs : 71.91
+
+};
+
+var csgo1_covert_st= {
+
+  fn : 184,
+  mw : 174.77,
+  ft : 184,
+  ww : 174.77,
+  bs : 184
+
+};
+
+var csgo1_knife_st= {
+
+  fn : 418.04,
+  mw : 139.23,
+  ft : 109.5066666667,
+  ww : 101.7166666667,
+  bs : 94.7233333333
+
+};
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -216,6 +316,26 @@ var huntsman_st = {
   restricted : hunts_restricted_st,
   milspec : hunts_milspec_st,
   knife : hunts_knife_st
+
+};
+
+var csgo1 = {
+
+  covert : csgo1_covert,
+  classified : csgo1_classified,
+  restricted : csgo1_restricted,
+  milspec : csgo1_milspec,
+  knife : csgo1_knife
+
+};
+
+var csgo1_st = {
+
+  covert : csgo1_covert_st,
+  classified : csgo1_classified_st,
+  restricted : csgo1_restricted_st,
+  milspec : csgo1_milspec_st,
+  knife : csgo1_knife_st
 
 };
 
