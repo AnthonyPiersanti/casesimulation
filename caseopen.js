@@ -17,8 +17,8 @@ var covert_stat = 0;
 var knife_stat = 0;
 
 var running = 0;
-var caseArray = huntsman;
-var caseArrayST = huntsman_st;
+var caseArray = chroma2;
+var caseArrayST = chroma2_st;
   
 
 function startPause(){
@@ -220,6 +220,11 @@ function getCaseArray(){
 	if (cval=="chroma2"){
 		caseArray = chroma2;
 		caseArrayST = chroma2_st;
+	}
+	
+	if (cval=="csgo1"){
+		caseArray = csgo1;
+		caseArrayST = csgo1_st;
 	}
 	
 }
