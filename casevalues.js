@@ -3,7 +3,8 @@
 var case_prices = {
   huntsman : 0.97,
   chroma2 : 0.12,
-  csgo1 : 6.86
+  csgo1 : 6.86,
+  shadow : 0.05
 
 };
 
@@ -290,6 +291,87 @@ var csgo1_knife_st= {
 
 };
 
+var shadow_knife_st = {
+  fn : 202.42,
+  mw : 112.32,
+  ft : 99.99,
+  ww : 87.421767,
+  bs : 75.2661
+};
+
+var shadow_knife = {
+  fn : 165.63,
+  mw : 88.23,
+  ft : 87.234,
+  ww : 72.50,
+  bs : 66.77
+};
+
+var shadow_covert_st = {
+  fn : 243.543,
+  mw : 121.3452,
+  ft : 77.432,
+  ww : 61.02,
+  bs : 55.52
+};
+
+var shadow_covert = {
+  fn : 53.023,
+  mw : 29.542,
+  ft : 20.14423,
+  ww : 18.3,
+  bs : 15.7532431
+};
+
+var shadow_classified = {
+  fn : 13.6266666,
+  mw : 7.07,
+  ft : 4.75,
+  ww : 4.503333,
+  bs : 3.44
+};
+
+var shadow_classified_st = {
+  fn : 52.4566667,
+  mw : 25.61,
+  ft : 14.6933333,
+  ww : 14.5,
+  bs : 9.93
+};
+
+var shadow_restriced = {
+  fn : 1.545,
+  mw : 0.8,
+  ft : 0.65332,
+  ww : 0.56642,
+  bs : 0.2
+};
+
+var shadow_restriced_st = {
+  fn : 7.1925,
+  mw : 2.9375,
+  ft : 1.578,
+  ww : 1.543,
+  bs : .988832
+};
+
+var shadow_milspec_st = {
+  fn : 1.737142,
+  mw : 0.635771428,
+  ft : 0.377,
+  ww : 0.2931,
+  bs : 0.12
+};
+
+var shadow_milspec = {
+  fn : 0.284285,
+  mw : 0.114285,
+  ft : 0.092857,
+  ww : 0.094,
+  bs : 0.06234
+
+};
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -344,5 +426,7 @@ var csgo1_st = {
   knife : csgo1_knife_st
 
 };
+
+
 
 
