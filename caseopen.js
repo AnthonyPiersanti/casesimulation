@@ -68,6 +68,65 @@ function reset(){
 	knife_stat = 0;
 	document.getElementById("knife_stat_val").innerHTML = 0;
 	
+	$("#milspec_mw_val").text(0);
+	$("#milspec_fac_new_val").text(0);
+	$("#milspec_ft_val").text(0);
+	$("#milspec_bs_val").text(0);
+	$("#milspec_ww_val").text(0);
+
+	$("#milspec_mw_val_st").text(0);
+	$("#milspec_fac_new_val").text(0);
+	$("#milspec_ft_val_st").text(0);
+	$("#milspec_bs_val_st").text(0);
+	$("#milspec_ww_val_st").text(0);
+
+	$("#knife_mw_val").text(0);
+	$("#knife_fac_new_val").text(0);
+	$("#knife_ft_val").text(0);
+	$("#knife_bs_val").text(0);
+	$("#knife_ww_val").text(0);
+
+	$("#knife_mw_val_st").text(0);
+	$("#knife_fac_new_val").text(0);
+	$("#knife_ft_val_st").text(0);
+	$("#knife_bs_val_st").text(0);
+	$("#knife_ww_val_st").text(0);
+
+	$("#covert_mw_val").text(0);
+	$("#covert_fac_new_val").text(0);
+	$("#covert_ft_val").text(0);
+	$("#covert_bs_val").text(0);
+	$("#covert_ww_val").text(0);
+
+	$("#covert_mw_val_st").text(0);
+	$("#covert_fac_new_val").text(0);
+	$("#covert_ft_val_st").text(0);
+	$("#covert_bs_val_st").text(0);
+	$("#covert_ww_val_st").text(0);
+
+	$("#classified_mw_val").text(0);
+	$("#classified_fac_new_val").text(0);
+	$("#classified_ft_val").text(0);
+	$("#classified_bs_val").text(0);
+	$("#classified_ww_val").text(0);
+
+	$("#classified_mw_val_st").text(0);
+	$("#classified_fac_new_val").text(0);
+	$("#classified_ft_val_st").text(0);
+	$("#classified_bs_val_st").text(0);
+	$("#classified_ww_val_st").text(0);
+
+	$("#restricted_mw_val").text(0);
+	$("#restricted_fac_new_val").text(0);
+	$("#restricted_ft_val").text(0);
+	$("#restricted_bs_val").text(0);
+	$("#restricted_ww_val").text(0);
+
+	$("#restricted_mw_val_st").text(0);
+	$("#restricted_fac_new_val").text(0);
+	$("#restricted_ft_val_st").text(0);
+	$("#restricted_bs_val_st").text(0);
+	$("#restricted_ww_val_st").text(0);
 
 	document.getElementById("start").innerHTML = "Start";
 
