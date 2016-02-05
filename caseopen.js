@@ -106,6 +106,10 @@ function openCase(){
 			spent += casePrice["chroma2"];
 		}else if(cval == "csgo1"){
 			spent += casePrice["csgo1"];
+		}else if(cval == "shadow"){
+			spent += casePrice["shadow"];
+		}else if(cval == "winter"){
+			spent += casePrice["winter"];
 		}
 		document.getElementById("spent_val").innerHTML = "$"+spent.toFixed(2)+" USD";
 		
