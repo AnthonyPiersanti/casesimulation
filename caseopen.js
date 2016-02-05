@@ -248,6 +248,9 @@ function addPrices(){
 
 	var csgo1_label = $("#csgo1").next();
 	csgo1_label.append(" $" + casePrice["csgo1"] + " USD");
+
+	var shadow_label = $("#shadow").next();
+	shadow_label.append(" $" + casePrice["shadow"] + " USD");
 }
 
 function getWear(){
