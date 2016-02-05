@@ -236,6 +236,16 @@ function getCaseArray(){
 		caseArray = csgo1;
 		caseArrayST = csgo1_st;
 	}
+
+	if (cval=="shadow"){
+		caseArray = shadow;
+		caseArrayST = shadow_st;
+	}
+
+	if (cval=="winter"){
+		caseArray = winter;
+		caseArrayST = winter_st;
+	}
 	
 }
 
@@ -251,6 +261,9 @@ function addPrices(){
 
 	var shadow_label = $("#shadow").next();
 	shadow_label.append(" $" + casePrice["shadow"] + " USD");
+
+	var winter_label = $("#winter").next();
+	winter_label.append(" $" + casePrice["winter"] + " USD");
 }
 
 function getWear(){

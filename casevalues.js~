@@ -4,8 +4,7 @@ var case_prices = {
   huntsman : 0.97,
   chroma2 : 0.12,
   csgo1 : 6.86,
-  shadow : 0.05,
-  winter : 1.53
+  shadow : 0.05
 
 };
 
@@ -232,7 +231,7 @@ var csgo1_covert= {
 
 };
 
-var ERSI_knife= {
+var csgo1_knife= {
 
   fn : 235.4766666667,
   mw : 157.8533333333,
@@ -282,7 +281,7 @@ var csgo1_covert_st= {
 
 };
 
-var ERSI_knife_st= {
+var csgo1_knife_st= {
 
   fn : 418.04,
   mw : 139.23,
@@ -340,7 +339,7 @@ var shadow_classified_st = {
   bs : 9.93
 };
 
-var shadow_restricted = {
+var shadow_restriced = {
   fn : 1.545,
   mw : 0.8,
   ft : 0.65332,
@@ -348,7 +347,7 @@ var shadow_restricted = {
   bs : 0.2
 };
 
-var shadow_restricted_st = {
+var shadow_restriced_st = {
   fn : 7.1925,
   mw : 2.9375,
   ft : 1.578,
@@ -405,7 +404,7 @@ var winter_classified_st = {
   bs : 15.8045
 };
 
-var winter_restricted = {
+var winter_restriced = {
   fn : 1.9575,
   mw : 1.2375,
   ft : 1.1475,
@@ -413,7 +412,7 @@ var winter_restricted = {
   bs : 1.24
 };
 
-var winter_restricted_st = {
+var winter_restriced_st = {
   fn : 9.48,
   mw : 4.1675,
   ft : 2.9675,
@@ -479,7 +478,7 @@ var csgo1 = {
   classified : csgo1_classified,
   restricted : csgo1_restricted,
   milspec : csgo1_milspec,
-  knife : ERSI_knife
+  knife : csgo1_knife
 
 };
 
@@ -489,7 +488,7 @@ var csgo1_st = {
   classified : csgo1_classified_st,
   restricted : csgo1_restricted_st,
   milspec : csgo1_milspec_st,
-  knife : ERSI_knife_st
+  knife : csgo1_knife_st
 
 };
 
@@ -511,22 +510,6 @@ var winter_st = {
   milspec : winter_milspec_st,
   knife : ERSI_knife_st
 
-};
-
-var shadow = {
-  covert : shadow_covert,
-  classified : shadow_classified,
-  restricted : shadow_restricted,
-  milspec : shadow_milspec,
-  knife : shadow_knife
-};
-
-var shadow_st = {
-  covert : shadow_covert_st,
-  classified : shadow_classified_st,
-  restricted : shadow_restricted_st,
-  milspec : shadow_milspec_st,
-  knife : shadow_knife_st
 };
 
 
