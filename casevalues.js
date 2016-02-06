@@ -5,7 +5,8 @@ var case_prices = {
   chroma2 : 0.12,
   csgo1 : 6.86,
   shadow : 0.05,
-  winter : 1.53
+  winter : 1.53,
+  phoenix : .06
 
 };
 
@@ -438,6 +439,71 @@ var winter_milspec = {
 
 };
 
+var phoenix_covert_st = {
+  fn : 11.29,
+  mw : 8.08,
+  ft : 62.15,
+  ww : 47.885,
+  bs : 33.035
+};
+
+var phoenix_covert = {
+  fn : 2.04,
+  mw : 1.24,
+  ft : 17.71,
+  ww : 15.42,
+  bs : 10.23
+};
+
+var phoenix_classified = {
+  fn : 2.81,
+  mw : 6.4466666667,
+  ft : 3.3066666667,
+  ww : 3.445,
+  bs : 2.5
+};
+
+var phoenix_classified_st = {
+  fn : 2.81,
+  mw : 36.5,
+  ft : 9.1833333333,
+  ww : 11.96,
+  bs : 8
+};
+
+var phoenix_restricted = {
+  fn : 0.86,
+  mw : 0.655,
+  ft : 0.3425,
+  ww : 0.4266666667,
+  bs : 0.33
+};
+
+var phoenix_restricted_st = {
+  fn : 4.61,
+  mw : 2.9875,
+  ft : 1.3,
+  ww : 1.1933333333,
+  bs : 1.0266666667
+};
+
+var phoenix_milspec_st = {
+  fn : 0.69,
+  mw : 0.535,
+  ft : 0.2,
+  ww : 0.345,
+  bs : 0.23
+};
+
+var phoenix_milspec = {
+  fn : 0.1433333333,
+  mw : 0.125,
+  ft : 0.0875,
+  ww : 0.105,
+  bs : 0.09
+
+};
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -527,6 +593,26 @@ var shadow_st = {
   restricted : shadow_restricted_st,
   milspec : shadow_milspec_st,
   knife : shadow_knife_st
+};
+
+var phoenix = {
+
+  covert : phoenix_covert,
+  classified : phoenix_classified,
+  restricted : phoenix_restricted,
+  milspec : phoenix_milspec,
+  knife : ERSI_knife
+
+};
+
+var phoenix_st = {
+
+  covert : phoenix_covert_st,
+  classified : phoenix_classified_st,
+  restricted : phoenix_restricted_st,
+  milspec : phoenix_milspec_st,
+  knife : ERSI_knife_st
+
 };
 
 
