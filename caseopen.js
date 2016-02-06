@@ -170,6 +170,9 @@ function openCase(){
 		}else if(cval == "winter"){
 			spent += casePrice["winter"];
 		}
+		else if(cval == "phoenix"){
+			spent += casePrice["phoenix"];
+		}
 		document.getElementById("spent_val").innerHTML = "$"+spent.toFixed(2)+" USD";
 		
 		var openedVal = 0;
@@ -425,6 +428,11 @@ function getCaseArray(){
 		caseArrayST = winter_st;
 	}
 	
+	if (cval=="phoenix"){
+		caseArray = phoenix;
+		caseArrayST = phoenix_st;
+	}
+	
 }
 
 function addPrices(){
@@ -442,6 +450,9 @@ function addPrices(){
 
 	var winter_label = $("#winter").next();
 	winter_label.append(" $" + casePrice["winter"] + " USD");
+	
+	var winter_label = $("#phoenix").next();
+	winter_label.append(" $" + casePrice["phoenix"] + " USD");
 }
 
 function getWear(){
