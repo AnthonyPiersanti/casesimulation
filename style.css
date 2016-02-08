@@ -16,74 +16,8 @@ body{
 	margin-bottom: 2px;
 
 }
- /* 
-	
-	I am ashamed of the following, I didn't think ahead when I started and it led to this mess.
 
- */
-#knife_fac_new, #knife_fac_new_val, #knife_mw, #knife_mw_val, #knife_ft, #knife_ft_val, #knife_ww, #knife_ww_val, #knife_bs, #knife_bs_val{
-	font-size: small;
-	display: inline-block;
-	padding: 1px;
-	margin: 1px;
-}
-
-#knife_fac_new_st, #knife_fac_new_val_st, #knife_mw_st, #knife_mw_val_st, #knife_ft_st, #knife_ft_val_st, #knife_ww_st, #knife_ww_val_st, #knife_bs_st, #knife_bs_val_st{
-	font-size: small;
-	display: inline-block;
-	padding: 1px;
-	margin: 1px;
-}
-
-#covert_fac_new, #covert_fac_new_val, #covert_mw, #covert_mw_val, #covert_ft, #covert_ft_val, #covert_ww, #covert_ww_val, #covert_bs, #covert_bs_val{
-	font-size: small;
-	display: inline-block;
-	padding: 1px;
-	margin: 1px;
-}
-
-#covert_fac_new_st, #covert_fac_new_val_st, #covert_mw_st, #covert_mw_val_st, #covert_ft_st, #covert_ft_val_st, #covert_ww_st, #covert_ww_val_st, #covert_bs_st, #covert_bs_val_st{
-	font-size: small;
-	display: inline-block;
-	padding: 1px;
-	margin: 1px;
-}
-
-#classified_fac_new_st, #classified_fac_new_val_st, #classified_mw_st, #classified_mw_val_st, #classified_ft_st, #classified_ft_val_st, #classified_ww_st, #classified_ww_val_st, #classified_bs_st, #classified_bs_val_st{
-	font-size: small;
-	display: inline-block;
-	padding: 1px;
-	margin: 1px;
-}
-
-#classified_fac_new, #classified_fac_new_val, #classified_mw, #classified_mw_val, #classified_ft, #classified_ft_val, #classified_ww, #classified_ww_val, #classified_bs, #classified_bs_val{
-	font-size: small;
-	display: inline-block;
-	padding: 1px;
-	margin: 1px;
-}
-
-#restricted_fac_new_st, #restricted_fac_new_val_st, #restricted_mw_st, #restricted_mw_val_st, #restricted_ft_st, #restricted_ft_val_st, #restricted_ww_st, #restricted_ww_val_st, #restricted_bs_st, #restricted_bs_val_st{
-	font-size: small;
-	display: inline-block;
-	padding: 1px;
-	margin: 1px;
-}
-
-#restricted_fac_new, #restricted_fac_new_val, #restricted_mw, #restricted_mw_val, #restricted_ft, #restricted_ft_val, #restricted_ww, #restricted_ww_val, #restricted_bs, #restricted_bs_val{
-	font-size: small;
-	display: inline-block;
-	padding: 1px;
-	margin: 1px;
-}
-
-#milspec_fac_new, #milspec_fac_new_val, #milspec_mw, #milspec_mw_val, #milspec_ft, #milspec_ft_val, #milspec_ww, #milspec_ww_val, #milspec_bs, #milspec_bs_val{
-	font-size: small;
-	display: inline-block;
-	padding: 1px;
-	margin: 1px;
-}
-#milspec_fac_new_st, #milspec_fac_new_val_st, #milspec_mw_st, #milspec_mw_val_st, #milspec_ft_st, #milspec_ft_val_st, #milspec_ww_st, #milspec_ww_val_st, #milspec_bs_st, #milspec_bs_val_st{
+.wear_values p{
 	font-size: small;
 	display: inline-block;
 	padding: 1px;
