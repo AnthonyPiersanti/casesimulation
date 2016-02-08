@@ -86,7 +86,7 @@ function reset(){
 	knife_stat = 0;
 	document.getElementById("knife_stat_val").innerHTML = 0;
 
-	$("#drop_text").html("# of cases " + "<span class=\"caret\"></span></button>");
+	$("#drop_text").html("Stop at " + "<span class=\"caret\"></span></button>");
 	stop_at = 0;
 
 	
