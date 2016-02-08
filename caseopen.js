@@ -21,16 +21,34 @@ var caseArray = chroma2;
 var caseArrayST = chroma2_st;
 
 var casePrice = case_prices;
+
+var last_num = 0;
+
+var stop_at = 0;
+
+function case_number(num){
+		if(num == -1){
+			stop_at = Number.MAX_VALUE;
+			last_num = stop_at;
+			$("#drop_text").text("Just gonna keep going.");
+		}else{
+			stop_at = num;
+			last_num = stop_at;
+			$("#drop_text").text("Opening " + num + " cases. ");
+		}
+
+	}
   
 
 function startPause(){
 
-	if (running == 0){
+	if (running == 0 && stop_at != 0){
 		running =1;
 		increment();
 		document.getElementById("start").innerHTML = "Pause";
 	}else{
 		running = 0;
+		stop_at++; //I have no idea why, but I need to do this. Probably race condition or something.
 		document.getElementById("start").innerHTML = "Resume";
 	}
 
@@ -67,6 +85,10 @@ function reset(){
 	document.getElementById("covert_stat_val").innerHTML = 0;
 	knife_stat = 0;
 	document.getElementById("knife_stat_val").innerHTML = 0;
+
+	$("#drop_text").html("# of cases " + "<span class=\"caret\"></span></button>");
+	stop_at = 0;
+
 	
 	$("#milspec_mw_val").text(0);
 	$("#milspec_fac_new_val").text(0);
@@ -136,18 +158,20 @@ function reset(){
 function increment(){
 	
 	if (running == 1){
-	
-		setTimeout(function(){
-			openCase();
-			increment();
-		
+
+		if(stop_at != 0){
+			setTimeout(function(){
+				openCase();
+				stop_at -= 1;
+				increment();
 
 
-		},100)
-	
+			},100)
+		}else{
+			startPause();
+			stop_at = last_num;
+		}
 	}
-
-
 }
 
 function openCase(){
