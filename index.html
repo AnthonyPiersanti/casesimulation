@@ -1,12 +1,12 @@
 <html>
 	<head>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<script type="text/javascript" src="casevalues.js"></script>
-		 <script type="text/javascript" src="caseopen.js"></script>
+		<script type="text/javascript" src="caseopen.js"></script>
 		 
 
 		 <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -237,10 +237,21 @@
 					<div class="col-sm-2"></div>
 				</div>
 			</div>
-
 			<div class="text-center">
 				<button id="start" onclick="startPause()" class="btn btn-primary btn-lg">Start</button>
 				<button id="reset" onclick="reset()" class="btn btn-default btn-lg" >Reset</button>
+				<div class="dropup" style="display: inline-block">  
+				  <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" id="drop_text"># of cases
+				  <span class="caret"></span></button>
+				  <ul class="dropdown-menu">
+				    <li><a href="#" onClick="case_number(1);return false;">1</li>
+				    <li><a href="#" onClick="case_number(5);return false;">5</a></li>
+				    <li><a href="#" onClick="case_number(50);return false;">50</a></li>
+				    <li><a href="#" onClick="case_number(500);return false;">500</a></li>
+				    <li><a href="#" onClick="case_number(1000);return false;">1000</a></li>
+				    <li><a href="#" onClick="case_number(-1);return false;">Just Keep Going.</a></li>
+				  </ul>
+				</div>
 			</div>
 			<div class="text-center">
 				<a href="https://github.com/AnthonyPiersanti/casesimulation">View on Github</a>
@@ -260,5 +271,8 @@
 
 		</script>
 	</body>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 </html>
