@@ -26,15 +26,17 @@ var last_num = 0;
 
 var stop_at = 0;
 
+var cval = "none";
+
 function case_number(num){
 		if(num == -1){
 			stop_at = Number.MAX_VALUE;
 			last_num = stop_at;
-			$("#drop_text").text("Just gonna keep going.");
+			$("#drop_text").html("Just gonna keep going." + " <span class=\"caret\"></span>");
 		}else{
 			stop_at = num;
 			last_num = stop_at;
-			$("#drop_text").text("Opening " + num + " cases. ");
+			$("#drop_text").html("Opening " + num + " cases." + " <span class=\"caret\"></span>");
 		}
 
 	}
@@ -176,27 +178,15 @@ function increment(){
 
 function openCase(){
 
-	if(running == 1){
+	if(running == 1 && cval != "none"){
 	
 		casesOpened+=1;
 		document.getElementById("opened_val").innerHTML = casesOpened;
 		
 		spent+=2.50;
-		cval =$('input[name="cases"]:checked').val();
-		if(cval == "huntsman"){
-			spent += casePrice["huntsman"];
-		}else if(cval == "chroma2"){
-			spent += casePrice["chroma2"];
-		}else if(cval == "csgo1"){
-			spent += casePrice["csgo1"];
-		}else if(cval == "shadow"){
-			spent += casePrice["shadow"];
-		}else if(cval == "winter"){
-			spent += casePrice["winter"];
-		}
-		else if(cval == "phoenix"){
-			spent += casePrice["phoenix"];
-		}
+		
+		spent += casePrice[cval];
+
 		document.getElementById("spent_val").innerHTML = "$"+spent.toFixed(2)+" USD";
 		
 		var openedVal = 0;
@@ -423,60 +413,59 @@ function isStatTrak(){
 	}
 }
 
-function getCaseArray(){
-	cval =$('input[name="cases"]:checked').val();
-	
-	if (cval=="huntsman"){
-		caseArray = huntsman;
-		caseArrayST = huntsman_st;
-		
-	}
-	
-	if (cval=="chroma2"){
-		caseArray = chroma2;
-		caseArrayST = chroma2_st;
-	}
-	
-	if (cval=="csgo1"){
-		caseArray = csgo1;
-		caseArrayST = csgo1_st;
-	}
+function getCaseArray(case_num){
 
-	if (cval=="shadow"){
-		caseArray = shadow;
-		caseArrayST = shadow_st;
-	}
+	//Hacky. Oh well. 
+	switch(case_num){
+		case 1:
+			caseArray = huntsman;
+			caseArrayST = huntsman_st;
+			cval = "huntsman";
+			$("#drop_text_cases").html("Huntsman Case $" + casePrice["huntsman"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 2:
+			caseArray = chroma2;
+			caseArrayST = chroma2_st;
+			cval = "chroma2";
+			$("#drop_text_cases").html("Chroma 2 Case $" + casePrice["chroma2"] + " USD <span class=\"caret\"></span></button>");
 
-	if (cval=="winter"){
-		caseArray = winter;
-		caseArrayST = winter_st;
-	}
-	
-	if (cval=="phoenix"){
-		caseArray = phoenix;
-		caseArrayST = phoenix_st;
+			break;
+		case 3:
+			caseArray = csgo1;
+			caseArrayST = csgo1_st;
+			cval = "csgo1";
+			$("#drop_text_cases").html("CS:GO Weapons Case 1 $" + casePrice["csgo1"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 4:
+			caseArray = shadow;
+			caseArrayST = shadow_st;
+			cval = "shadow";
+			$("#drop_text_cases").html("Shadow Case $" + casePrice["shadow"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 5:
+			caseArray = winter;
+			caseArrayST = winter_st;
+			cval = "winter";
+			$("#drop_text_cases").html("Winter Offensive Case $" + casePrice["winter"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 6:
+			caseArray = phoenix;
+			caseArrayST = phoenix_st;
+			cval = "phoenix";
+			$("#drop_text_cases").html("Phoenix Case $" + casePrice["phoenix"] + " USD <span class=\"caret\"></span></button>");
+			break;
 	}
 	
 }
 
 function addPrices(){
-	var chroma2_label = $("#chroma2").next();
-	chroma2_label.append(" $" + casePrice["chroma2"] + " USD");
 
-	var huntsman_label = $("#huntsman").next();
-	huntsman_label.append(" $" + casePrice["huntsman"] + " USD");
-
-	var csgo1_label = $("#csgo1").next();
-	csgo1_label.append(" $" + casePrice["csgo1"] + " USD");
-
-	var shadow_label = $("#shadow").next();
-	shadow_label.append(" $" + casePrice["shadow"] + " USD");
-
-	var winter_label = $("#winter").next();
-	winter_label.append(" $" + casePrice["winter"] + " USD");
-	
-	var winter_label = $("#phoenix").next();
-	winter_label.append(" $" + casePrice["phoenix"] + " USD");
+	$("#huntsman_case").append(" $" + casePrice["huntsman"] + " USD");
+	$("#chroma2_case").append(" $" + casePrice["chroma2"] + " USD");
+	$("#csgo1_case").append(" $" + casePrice["csgo1"] + " USD");
+	$("#winter_case").append(" $" + casePrice["winter"] + " USD");
+	$("#shadow_case").append(" $" + casePrice["shadow"] + " USD");
+	$("#phoenix_case").append(" $" + casePrice["phoenix"] + " USD");
 }
 
 function getWear(){
