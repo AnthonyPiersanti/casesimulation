@@ -44,7 +44,13 @@ function case_number(num){
 
 function startPause(){
 
+	
 	if (running == 0 && stop_at != 0){
+		if(cval == "none"){
+			$("#no_case").show();
+			window.setTimeout(function() { $("#no_case").alert('close'); }, 3000);
+			return;
+		}
 		running =1;
 		increment();
 		document.getElementById("start").innerHTML = "Pause";
