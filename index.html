@@ -42,12 +42,18 @@
 				<div class="row">
 					<div class="col-sm-2"></div>
 					<div class="col-sm-8">
-							<input type="radio" name="cases" id="chroma2" value="chroma2" onclick="getCaseArray()"checked> <label>Chroma 2 Case</label><br>
-							<input type="radio" name="cases" id="huntsman" onclick="getCaseArray()" value="huntsman" > <label>Huntsman Case</label><br>
-							<input type="radio" name="cases" id="csgo1" onclick="getCaseArray()" value="csgo1" > <label>CS:GO Weapon Case 1</label><br>
-							<input type="radio" name="cases" id="shadow" onclick="getCaseArray()" value="shadow" > <label>Shadow Case</label><br>
-							<input type="radio" name="cases" id="phoenix" onclick="getCaseArray()" value="phoenix" > <label>Operation Phoenix Case</label><br>
-							<input type="radio" name="cases" id="winter" onclick="getCaseArray()" value="winter" > <label>Winter Offensive Case</label><br>
+						<div class="dropdown">
+							<button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" id="drop_text_cases">Select a case
+							  <span class="caret"></span></button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#" onClick="getCaseArray(1);return false;" id="huntsman_case">Huntsman Case</a></li>
+							    <li><a href="#" onClick="getCaseArray(2);return false;" id="chroma2_case">Chroma 2 Case</a></li>
+							    <li><a href="#" onClick="getCaseArray(3);return false;" id="csgo1_case">CS:GO Weapons Case 1</a></li>
+							    <li><a href="#" onClick="getCaseArray(4);return false;" id="shadow_case">Shadow Case</a></li>
+							    <li><a href="#" onClick="getCaseArray(5);return false;" id="winter_case">Winter Offensive Case</a></li>
+							    <li><a href="#" onClick="getCaseArray(6);return false;" id="phoenix_case">Phoenix Case</a></li>
+							  </ul>
+						</div>
 					</div>
 					<div class="col-sm-2"></div>
 
@@ -56,7 +62,7 @@
 			<div class="row">
 				<div class="col-sm-2"></div>
 					<div class="col-sm-8">
-						<h3>Step 2: Start Simulation</h3>
+						<h3>Step 2: Make it rain skins</h3>
 					</div>
 				<div class="col-sm-2"></div>
 			</div>
