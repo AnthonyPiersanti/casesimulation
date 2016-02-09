@@ -24,7 +24,7 @@ var casePrice = case_prices;
 
 var last_num = 0;
 
-var stop_at = -1;
+var stop_at = Number.MAX_VALUE;
 
 var cval = "none";
 
@@ -48,6 +48,9 @@ function startPause(){
 		running =1;
 		increment();
 		document.getElementById("start").innerHTML = "Pause";
+		if(stop_at == Number.MAX_VALUE){
+			$("#drop_text").html("Just gonna keep going." + " <span class=\"caret\"></span>");
+		}
 	}else{
 		running = 0;
 		stop_at++; //I have no idea why, but I need to do this. Probably race condition or something.
@@ -89,7 +92,7 @@ function reset(){
 	document.getElementById("knife_stat_val").innerHTML = 0;
 
 	$("#drop_text").html("Stop at " + "<span class=\"caret\"></span></button>");
-	stop_at = -1;
+	stop_at = Number.MAX_VALUE;
 
 	
 	$("#milspec_mw_val").text(0);
