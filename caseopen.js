@@ -48,14 +48,14 @@ function startPause(){
 	if (running == 0 && stop_at != 0){
 		if(cval == "none"){
 			$("#no_case").show();
-			window.setTimeout(function() { $("#no_case").alert('close'); }, 3000);
-			return;
-		}
-		running =1;
-		increment();
-		document.getElementById("start").innerHTML = "Pause";
-		if(stop_at == Number.MAX_VALUE){
-			$("#drop_text").html("Just gonna keep going." + " <span class=\"caret\"></span>");
+			window.setTimeout(function() { $("#no_case").hide(); }, 2500);
+		}else{
+			running =1;
+			increment();
+			document.getElementById("start").innerHTML = "Pause";
+			if(stop_at == Number.MAX_VALUE){
+				$("#drop_text").html("Just gonna keep going." + " <span class=\"caret\"></span>");
+			}
 		}
 	}else{
 		running = 0;
