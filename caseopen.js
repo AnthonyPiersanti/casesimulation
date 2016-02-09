@@ -24,7 +24,7 @@ var casePrice = case_prices;
 
 var last_num = 0;
 
-var stop_at = 0;
+var stop_at = -1;
 
 var cval = "none";
 
@@ -89,7 +89,7 @@ function reset(){
 	document.getElementById("knife_stat_val").innerHTML = 0;
 
 	$("#drop_text").html("Stop at " + "<span class=\"caret\"></span></button>");
-	stop_at = 0;
+	stop_at = -1;
 
 	
 	$("#milspec_mw_val").text(0);
