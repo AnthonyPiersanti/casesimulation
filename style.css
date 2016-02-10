@@ -8,6 +8,10 @@ body{
 	height: 100%;
 }
 
+#case_included{
+	display: inline;
+}
+
 #spent, #profit, #value, #opened{
 	font-size: x-large;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;

@@ -194,7 +194,10 @@ function openCase(){
 		
 		spent+=2.50;
 		
-		spent += casePrice[cval];
+		if($("#include_case").is(':checked')){
+			spent += casePrice[cval];
+		}
+		
 
 		document.getElementById("spent_val").innerHTML = "$"+spent.toFixed(2)+" USD";
 		
