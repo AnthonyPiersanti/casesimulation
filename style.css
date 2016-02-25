@@ -17,6 +17,17 @@ body{
 
 }
 
+#buttons{
+    padding-bottom: 20px;
+}
+
+#pick_case, #money{
+	background-color: #31404E;
+	text-align: center;
+	padding-top: 13px;
+	padding-bottom: 35px;
+}
+
 .wear_values p{
 	font-size: small;
 	display: inline-block;

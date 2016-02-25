@@ -31,17 +31,14 @@
 
 
 
-			<div id="pick_case">
+			<div class="panel" id="pick_case">
 				<div class="row">
-					<div class="col-sm-2"></div>
-						<div class="col-sm-8">
-							<h3>Step 1: Pick a Case to open</h3>
-						</div>
-					<div class="col-sm-2"></div>
+					<div class="col-sm-offset-2 col-sm-8">
+						<h3>First, pick your case.</h3>
+					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-8">
+					<div class="col-sm-offset-2 col-sm-8">
 						<div class="dropdown">
 							<button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" id="drop_text_cases">Select a case
 							  <span class="caret"></span></button>
@@ -55,22 +52,42 @@
 							  </ul>
 						</div>
 					</div>
-					<div class="col-sm-2"></div>
-
 				</div>
 			</div>	
 			<div class="row">
-				<div class="col-sm-2"></div>
-					<div class="col-sm-8">
-						<h3>Step 2: Make it rain skins</h3>
-					</div>
-				<div class="col-sm-2"></div>
+				<div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
+					<h3 class="center">Make it rain skins.</h3>
+				</div>
 			</div>
 
-			<div id="money">
+			<div class="text-center" id="buttons">
+				<button id="start" onclick="startPause()" class="btn btn-primary btn-lg">Start</button>
+				<button id="reset" onclick="reset()" class="btn btn-default btn-lg" >Reset</button>
+				<div class="dropup" style="display: inline-block">  
+				  <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" id="drop_text">Stop at
+				  <span class="caret"></span></button>
+				  <ul class="dropdown-menu">
+				    <li><a href="#" onClick="case_number(1);return false;">1 case</li>
+				    <li><a href="#" onClick="case_number(5);return false;">5 cases</a></li>
+				    <li><a href="#" onClick="case_number(50);return false;">50 cases</a></li>
+				    <li><a href="#" onClick="case_number(500);return false;">500 cases</a></li>
+				    <li><a href="#" onClick="case_number(1000);return false;">1000 cases</a></li>
+				    <li><a href="#" onClick="case_number(-1);return false;">Just Keep Going.</a></li>
+				  </ul>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-sm-6 col-sm-offset-3">
+					<div class="alert alert-danger fade in" style="display: none" id="no_case"> 
+		    			<a class="close" onclick="$('.alert').hide()">&times;</a>  
+		    			<strong>Are you throwing?</strong> You gotta select a case at step 1 or the skins wont rain. 
+					</div>
+				</div>
+			</div>
+
+			<div class= "panel" id="money">
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-4">
+					<div class="col-sm-offset-2 col-sm-4">
 						<p id="opened">Cases Opened</p>
 						<p id="opened_val">0</p>
 					</div>
@@ -78,11 +95,9 @@
 						<p id="spent"> Money Spent</p>
 						<p id="spent_val">$0 USD</p>
 					</div>
-					<div class="col-sm-2"></div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-4">
+					<div class="col-sm-offset-2 col-sm-4">
 						<p id="value"> Value of Skins</p>
 						<p id="value_val">$0 USD</p>
 					</div>
@@ -90,14 +105,12 @@
 						<p id="profit"> Profit</p>
 						<p id="profit_val">$0 USD</p>
 					</div>
-					<div class="col-sm-2"></div>
 				</div>
 			</div>
 
 			<div id="weapons">
 				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-4">
+					<div class="col-sm-4 col-sm-offset-2">
 						<p id="milspec">Mil-Spec: </p>
 						<p id="milspec_val">0</p>
 						<div class="wear_values">
@@ -241,34 +254,7 @@
 							<p id="knife_bs_val_st">0</p>
 						</div>
 					</div>
-					<div class="col-sm-2"></div>
 				</div>
-			</div>
-			<div class="text-center">
-				<button id="start" onclick="startPause()" class="btn btn-primary btn-lg">Start</button>
-				<button id="reset" onclick="reset()" class="btn btn-default btn-lg" >Reset</button>
-				<div class="dropup" style="display: inline-block">  
-				  <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" id="drop_text">Stop at
-				  <span class="caret"></span></button>
-				  <ul class="dropdown-menu">
-				    <li><a href="#" onClick="case_number(1);return false;">1 case</li>
-				    <li><a href="#" onClick="case_number(5);return false;">5 cases</a></li>
-				    <li><a href="#" onClick="case_number(50);return false;">50 cases</a></li>
-				    <li><a href="#" onClick="case_number(500);return false;">500 cases</a></li>
-				    <li><a href="#" onClick="case_number(1000);return false;">1000 cases</a></li>
-				    <li><a href="#" onClick="case_number(-1);return false;">Just Keep Going.</a></li>
-				  </ul>
-				</div>
-			</div>
-			<div class = "row">
-				<div class = "col-sm-3"></div>
-				<div class = "col-sm-6">
-					<div class="alert alert-danger fade in" style="display: none" id="no_case"> 
-		    			<a class="close" onclick="$('.alert').hide()">&times;</a>  
-		    			<strong>Are you throwing?</strong> You gotta select a case at step 1 or the skins wont rain. 
-					</div>
-				</div>
-				<div class = "col-sm-3"></div>
 			</div>
 			<div class="text-center">
 				<a href="https://github.com/AnthonyPiersanti/casesimulation">View on Github</a>
