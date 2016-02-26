@@ -220,7 +220,6 @@ function openCase(){
 					$("#knife_ww_val_st").text(parseInt($("#knife_ww_val_st").text()) + 1);
 				}else{
 					$("#knife_bs_val_st").text(parseInt($("#knife_bs_val_st").text()) + 1);
-
 				}
 				
 			}else{
@@ -463,6 +462,12 @@ function getCaseArray(case_num){
 			cval = "phoenix";
 			$("#drop_text_cases").html("Phoenix Case $" + casePrice["phoenix"] + " USD <span class=\"caret\"></span></button>");
 			break;
+		case 7:
+			caseArray = breakout;
+			caseArrayST = breakout_st;
+			cval = "breakout";
+			$("#drop_text_cases").html("Operation Breakout Weapons Case $" + casePrice["breakout"] + " USD <span class=\"caret\"></span></button>");
+			break;
 	}
 	
 }
@@ -475,6 +480,7 @@ function addPrices(){
 	$("#winter_case").append(" $" + casePrice["winter"] + " USD");
 	$("#shadow_case").append(" $" + casePrice["shadow"] + " USD");
 	$("#phoenix_case").append(" $" + casePrice["phoenix"] + " USD");
+	$("#breakout_case").append(" $" + casePrice["breakout"] + " USD");
 }
 
 function getWear(){

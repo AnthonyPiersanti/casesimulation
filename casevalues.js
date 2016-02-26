@@ -6,7 +6,8 @@ var case_prices = {
   csgo1 : 6.86,
   shadow : 0.05,
   winter : 1.53,
-  phoenix : .06
+  phoenix : 0.06,
+  breakout : 0.03
 
 };
 
@@ -504,6 +505,86 @@ var phoenix_milspec = {
 
 };
 
+var breakout_knife_st = {
+  fn : 603.412,
+  mw : 477.23,
+  ft : 120.32,
+  ww : 99.2,
+  bs : 98.23
+};
+
+var breakout_knife = {
+  fn : 242.44,
+  mw : 150.22,
+  ft : 88.234145,
+  ww : 72.14,
+  bs : 66.32
+};
+
+var breakout_covert_st = {
+  fn : 97.965,
+  mw : 46.9,
+  ft : 25.32,
+  ww : 23.32,
+  bs : 18.975
+};
+
+var breakout_covert = {
+  fn : 18.17,
+  mw : 10.945,
+  ft : 7.2,
+  ww : 7.01,
+  bs : 5.32
+};
+
+var breakout_classified_st = {
+  fn : 19.80666667,
+  mw : 11.793333333,
+  ft : 7.57333333,
+  ww : 9.17,
+  bs : 5.555
+};
+
+var breakout_classified = {
+  fn : 3.7233333,
+  mw : 2.32,
+  ft : 1.88,
+  ww : 2.15,
+  bs : 1.7
+};
+
+var breakout_restricted_st = {
+  fn : 3.2475,
+  mw : 1.42,
+  ft : 1.0525,
+  ww : 1.09,
+  bs : 0.76
+};
+
+var breakout_restricted = {
+  fn : 0.53,
+  mw : 0.3,
+  ft : 0.2775,
+  ww : 0.3766666,
+  bs : 0.335
+};
+
+var breakout_milspec_st = {
+  fn : 1.39,
+  mw : 0.42,
+  ft : 0.262,
+  ww : 0.3342,
+  bs : 0.26
+};
+
+var breakout_milspec = {
+  fn : 0.27,
+  mw : 0.104,
+  ft : 0.0973222,
+  ww : 0.078,
+  bs : 0.0776
+};
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -557,6 +638,22 @@ var csgo1_st = {
   milspec : csgo1_milspec_st,
   knife : ERSI_knife_st
 
+};
+
+var breakout_st = {
+  covert : breakout_covert_st,
+  classified : breakout_classified_st,
+  restricted : breakout_restricted_st,
+  milspec : breakout_milspec_st,
+  knife : breakout_knife_st
+};
+
+var breakout = {
+  covert : breakout_covert,
+  classified : breakout_classified,
+  restricted : breakout_restricted,
+  milspec : breakout_milspec,
+  knife : breakout_knife
 };
 
 var winter = {
