@@ -9,7 +9,8 @@ var case_prices = {
   phoenix : 0.06,
   breakout : 0.03,
   bravo : 9.93,
-  chroma : 0.07
+  chroma : 0.07,
+  falchion: 0.04
 
 };
 
@@ -721,6 +722,90 @@ var chroma_milspec = {
   bs : 0.096
 };
 
+
+//Falchion Case
+
+var falchion_knife_st = {
+  fn : 334.88,
+  mw : 130.9233333,
+  ft : 98.49333333,
+  ww : 78.48333333,
+  bs : 75.03333333
+};
+
+var falchion_knife = {
+  fn : 147.015,
+  mw : 53.856,
+  ft : 51.715,
+  ww : 51.33833333,
+  bs : 46.40333333
+};
+
+var falchion_covert_st = {
+  fn : 205.335,
+  mw : 121.05,
+  ft : 70.935,
+  ww : 51.02,
+  bs : 33.09
+};
+
+var falchion_covert = {
+  fn : 300.995,
+  mw : 35.045,
+  ft : 21.8,
+  ww : 17.195,
+  bs : 10.615
+};
+
+var falchion_classified = {
+  fn : 14.47333333,
+  mw : 5.896666667,
+  ft : 4.19,
+  ww : 4.21,
+  bs : 4.395
+};
+
+var falchion_classified_st = {
+  fn : 17.11,
+  mw : 8.973333333,
+  ft : 5.653333333,
+  ww : 3.995,
+  bs : 4.18
+};
+
+var falchion_restricted = {
+  fn : 4.1725,
+  mw : 1.232,
+  ft : 0.556,
+  ww : 0.648,
+  bs : 0.498
+};
+
+var falchion_restricted_st = {
+  fn : 4.47,
+  mw : 3.224,
+  ft : 1.326,
+  ww : 1.556,
+  bs : 1.46
+};
+
+var falchion_milspec_st = {
+  fn : 2.71,
+  mw : 0.901666667,
+  ft : 0.543333333,
+  ww : 0.72,
+  bs : 0.541666667
+};
+
+var falchion_milspec = {
+  fn : 0.441666667,
+  mw : 0.15,
+  ft : 0.106666667,
+  ww : 0.118333333,
+  bs : 0.12
+
+};
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -885,6 +970,26 @@ var chroma_st = {
   restricted : chroma_restricted_st,
   milspec : chroma_milspec_st,
   knife : ERSI_knife_st
+
+};
+
+var falchion = {
+
+  covert : falchion_covert,
+  classified : falchion_classified,
+  restricted : falchion_restricted,
+  milspec : falchion_milspec,
+  knife : falchion_knife
+
+};
+
+var falchion_st = {
+
+  covert : falchion_covert_st,
+  classified : falchion_classified_st,
+  restricted : falchion_restricted_st,
+  milspec : falchion_milspec_st,
+  knife : falchion_knife_st
 
 };
 
