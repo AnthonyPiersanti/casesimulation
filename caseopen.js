@@ -466,7 +466,7 @@ function getCaseArray(case_num){
 			caseArray = breakout;
 			caseArrayST = breakout_st;
 			cval = "breakout";
-			$("#drop_text_cases").html("Operation Breakout Weapons Case $" + casePrice["breakout"] + " USD <span class=\"caret\"></span></button>");
+			$("#drop_text_cases").html("Operation Breakout Case $" + casePrice["breakout"] + " USD <span class=\"caret\"></span></button>");
 			break;
 		case 8:
 			caseArray = bravo;
@@ -490,7 +490,7 @@ function getCaseArray(case_num){
 			caseArray = vanguard;
 			caseArrayST = vanguard_st;
 			cval = "vanguard";
-			$("#drop_text_cases").html("Vanguard Case $" + casePrice["vanguard"] + " USD <span class=\"caret\"></span></button>");
+			$("#drop_text_cases").html("Operation Vanguard Case $" + casePrice["vanguard"] + " USD <span class=\"caret\"></span></button>");
 			break;
 	}
 	
