@@ -8,7 +8,8 @@ var case_prices = {
   winter : 1.53,
   phoenix : 0.06,
   breakout : 0.03,
-  bravo : 9.93
+  bravo : 9.93,
+  chroma : 0.07
 
 };
 
@@ -653,6 +654,73 @@ var breakout_milspec = {
   bs : 0.0776
 };
 
+
+//Chroma Case
+
+var chroma_covert_st = {
+  fn : 36.29,
+  mw : 36.29,
+  ft : 24.945,
+  ww : 2.91,
+  bs : 1.62
+};
+
+var chroma_covert = {
+  fn : 9.82,
+  mw : 9.82,
+  ft : 62.455,
+  ww : 14.53,
+  bs : 7.07
+};
+
+var chroma_classified_st = {
+  fn : 28.43666667,
+  mw : 15.36666667,
+  ft : 9.04,
+  ww : 11.26333333,
+  bs : 8.56
+};
+
+var chroma_classified = {
+  fn : 5.586666667,
+  mw : 2.96,
+  ft : 1.94,
+  ww : 3.186666667,
+  bs : 1.906666667
+};
+
+var chroma_restricted_st = {
+  fn : 4.39,
+  mw : 1.9025,
+  ft : 1.2925,
+  ww : 1.315,
+  bs : 1.3625
+};
+
+var chroma_restricted = {
+  fn : 0.805,
+  mw : 0.4075,
+  ft : 0.305,
+  ww : 0.5525,
+  bs : 0.4425
+};
+
+var chroma_milspec_st = {
+  fn : 1.116,
+  mw : 0.374,
+  ft : 0.284,
+  ww : 0.474,
+  bs : 0.45
+};
+
+var chroma_milspec = {
+  fn : 0.212,
+  mw : 0.112,
+  ft : 0.094,
+  ww : 0.098,
+  bs : 0.096
+};
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -796,6 +864,26 @@ var bravo_st = {
   classified : bravo_classified_st,
   restricted : bravo_restricted_st,
   milspec : bravo_milspec_st,
+  knife : ERSI_knife_st
+
+};
+
+var chroma = {
+
+  covert : chroma_covert,
+  classified : chroma_classified,
+  restricted : chroma_restricted,
+  milspec : chroma_milspec,
+  knife : ERSI_knife
+
+};
+
+var chroma_st = {
+
+  covert : chroma_covert_st,
+  classified : chroma_classified_st,
+  restricted : chroma_restricted_st,
+  milspec : chroma_milspec_st,
   knife : ERSI_knife_st
 
 };

@@ -474,6 +474,12 @@ function getCaseArray(case_num){
 			cval = "bravo";
 			$("#drop_text_cases").html("Operation Bravo Case $" + casePrice["bravo"] + " USD <span class=\"caret\"></span></button>");
 			break;
+		case 9:
+			caseArray = chroma;
+			caseArrayST = chroma_st;
+			cval = "chroma";
+			$("#drop_text_cases").html("Chroma Case $" + casePrice["chroma"] + " USD <span class=\"caret\"></span></button>");
+			break;
 	}
 	
 }
@@ -488,6 +494,7 @@ function addPrices(){
 	$("#phoenix_case").append(" $" + casePrice["phoenix"] + " USD");
 	$("#breakout_case").append(" $" + casePrice["breakout"] + " USD");
 	$("#bravo_case").append(" $" + casePrice["bravo"] + " USD");
+	$("#chroma_case").append(" $" + casePrice["chroma"] + " USD");
 }
 
 function getWear(){
