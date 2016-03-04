@@ -10,7 +10,8 @@ var case_prices = {
   breakout : 0.03,
   bravo : 9.93,
   chroma : 0.07,
-  falchion: 0.04
+  falchion: 0.04,
+  vanguard: 0.19
 
 };
 
@@ -806,6 +807,75 @@ var falchion_milspec = {
 
 };
 
+
+//Vanguard Case
+
+var vanguard_covert_st = {
+  fn : 457.845,
+  mw : 92.56,
+  ft : 63.78,
+  ww : 81.99,
+  bs : 66.685
+};
+
+var vanguard_covert = {
+  fn : 49.235,
+  mw : 15.18,
+  ft : 11.115,
+  ww : 12.355,
+  bs : 9.885
+};
+
+var vanguard_classified = {
+  fn : 5.836666667,
+  mw : 2.453333333,
+  ft : 1.99,
+  ww : 2.133333333,
+  bs : 2.223333333
+};
+
+var vanguard_classified_st = {
+  fn : 33.96666667,
+  mw : 12.72666667,
+  ft : 7.7,
+  ww : 8.74,
+  bs : 7.483333333
+};
+
+var vanguard_restricted = {
+  fn : 1.77,
+  mw : 0.855,
+  ft : 0.6925,
+  ww : 1.393333333,
+  bs : 0.816666667
+};
+
+var vanguard_restricted_st = {
+  fn : 9.4475,
+  mw : 4.73,
+  ft : 3.7325,
+  ww : 5.073333333,
+  bs : 3.97
+};
+
+var vanguard_milspec_st = {
+  fn : 1.85,
+  mw : 0.832,
+  ft : 0.744,
+  ww : 0.535,
+  bs : 0.79
+};
+
+var vanguard_milspec = {
+  fn : 1.84,
+  mw : 0.362,
+  ft : 0.282,
+  ww : 0.29,
+  bs : 0.785
+
+};
+
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -990,6 +1060,26 @@ var falchion_st = {
   restricted : falchion_restricted_st,
   milspec : falchion_milspec_st,
   knife : falchion_knife_st
+
+};
+
+var vanguard = {
+
+  covert : vanguard_covert,
+  classified : vanguard_classified,
+  restricted : vanguard_restricted,
+  milspec : vanguard_milspec,
+  knife : ERSI_knife
+
+};
+
+var vanguard_st = {
+
+  covert : vanguard_covert_st,
+  classified : vanguard_classified_st,
+  restricted : vanguard_restricted_st,
+  milspec : vanguard_milspec_st,
+  knife : ERSI_knife_st
 
 };
 

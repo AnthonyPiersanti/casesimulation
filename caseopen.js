@@ -483,8 +483,14 @@ function getCaseArray(case_num){
 		case 10:
 			caseArray = falchion;
 			caseArrayST = falchion_st;
-			cval = "chroma";
+			cval = "falchion";
 			$("#drop_text_cases").html("Falchion Case $" + casePrice["falchion"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 11:
+			caseArray = vanguard;
+			caseArrayST = vanguard_st;
+			cval = "vanguard";
+			$("#drop_text_cases").html("Vanguard Case $" + casePrice["vanguard"] + " USD <span class=\"caret\"></span></button>");
 			break;
 	}
 	
@@ -502,6 +508,7 @@ function addPrices(){
 	$("#bravo_case").append(" $" + casePrice["bravo"] + " USD");
 	$("#chroma_case").append(" $" + casePrice["chroma"] + " USD");
 	$("#falchion_case").append(" $" + casePrice["falchion"] + " USD");
+	$("#vanguard_case").append(" $" + casePrice["vanguard"] + " USD");
 }
 
 function getWear(){
