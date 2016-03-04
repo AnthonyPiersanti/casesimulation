@@ -10,10 +10,10 @@ var case_prices = {
   breakout : 0.03,
   bravo : 9.93,
   chroma : 0.07,
-  falchion: 0.04,
-  vanguard: 0.19,
-  eSports2013winter : 0.23
-
+  falchion : 0.04,
+  vanguard : 0.19,
+  eSports2013winter : 0.23,
+  revolver : 0.04
 };
 
 var chroma2_milspec = {
@@ -876,7 +876,6 @@ var vanguard_milspec = {
 
 };
 
-
 //eSports 2013 Winter Case
 
 var eSports2013winter_covert_st = {
@@ -944,6 +943,73 @@ var eSports2013winter_milspec = {
 
 };
 
+
+//revolver case
+
+var revolver_covert_st = {
+  fn : 146.055,
+  mw : 67.54,
+  ft : 27.4,
+  ww : 30.54,
+  bs : 31.2
+};
+
+var revolver_covert = {
+  fn : 38.11,
+  mw : 31.51,
+  ft : 5.91,
+  ww : 8.455,
+  bs : 6.96
+};
+
+var revolver_classified_st = {
+  fn : 66.845,
+  mw : 155.9766667,
+  ft : 16.60666667,
+  ww : 16.783333,
+  bs : 11.5233333
+};
+
+var revolver_classified = {
+  fn : 16.3,
+  mw : 11.72666667,
+  ft : 14.43,
+  ww : 4.75,
+  bs : 3.333333333
+};
+
+var revolver_restricted_st = {
+  fn : 15.301666667,
+  mw : 6.87333333333,
+  ft : 3.44,
+  ww : 2.74166666667,
+  bs : 2.441666667
+};
+
+var revolver_restricted = {
+  fn : 2.993333333,
+  mw : 1.3466666667,
+  ft : 0.71333333,
+  ww : 0.6216666667,
+  bs : 0.53
+};
+
+var revolver_milspec_st = {
+  fn : 5.69,
+  mw : 1.18,
+  ft : 0.711666,
+  ww : 0.934,
+  bs : 0.3825
+};
+
+var revolver_milspec = {
+  fn : 0.786666667,
+  mw : 0.1983333,
+  ft : 0.1809,
+  ww : 0.1222121111,
+  bs : 0.089
+
+};
 
 var chroma2 = {
   covert : chroma2_covert,
@@ -1168,6 +1234,26 @@ var eSports2013winter_st = {
   classified : eSports2013winter_classified_st,
   restricted : eSports2013winter_restricted_st,
   milspec : eSports2013winter_milspec_st,
+  knife : ERSI_knife_st
+
+};
+
+var revolver = {
+
+  covert : revolver_covert,
+  classified : revolver_classified,
+  restricted : revolver_restricted,
+  milspec : revolver_milspec,
+  knife : ERSI_knife
+
+};
+
+var revolver_st = {
+
+  covert : revolver_covert_st,
+  classified : revolver_classified_st,
+  restricted : revolver_restricted_st,
+  milspec : revolver_milspec_st,
   knife : ERSI_knife_st
 
 };

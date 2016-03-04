@@ -493,10 +493,16 @@ function getCaseArray(case_num){
 			$("#drop_text_cases").html("Operation Vanguard Case $" + casePrice["vanguard"] + " USD <span class=\"caret\"></span></button>");
 			break;
 		case 12:
-			caseArray = vanguard;
-			caseArrayST = vanguard_st;
+			caseArray = eSports2013winter;
+			caseArrayST = eSports2013winter_st;
 			cval = "eSports2013winter";
 			$("#drop_text_cases").html("eSports 2013 Winter Case $" + casePrice["eSports2013winter"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 13:
+			caseArray = revolver;
+			caseArrayST = revolver_st;
+			cval = "revolver";
+			$("#drop_text_cases").html("Revolver Case" + casePrice["revolver"] + " USD <span class=\"caret\"></span></button>");
 			break;
 	}
 	
@@ -516,6 +522,7 @@ function addPrices(){
 	$("#falchion_case").append(" $" + casePrice["falchion"] + " USD");
 	$("#vanguard_case").append(" $" + casePrice["vanguard"] + " USD");
 	$("#eSports2013winter_case").append(" $" + casePrice["eSports2013winter"] + " USD");
+	$("#revolver_case").append(" $" + casePrice["revolver"] + " USD");
 }
 
 function getWear(){
