@@ -495,7 +495,7 @@ function getCaseArray(case_num){
 		case 12:
 			caseArray = vanguard;
 			caseArrayST = vanguard_st;
-			cval = "eSportswinter2013";
+			cval = "eSports2013winter";
 			$("#drop_text_cases").html("eSports 2013 Winter Case $" + casePrice["eSports2013winter"] + " USD <span class=\"caret\"></span></button>");
 			break;
 	}
