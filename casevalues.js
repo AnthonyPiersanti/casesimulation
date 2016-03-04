@@ -11,7 +11,8 @@ var case_prices = {
   bravo : 9.93,
   chroma : 0.07,
   falchion: 0.04,
-  vanguard: 0.19
+  vanguard: 0.19,
+  eSports2013winter : 0.23
 
 };
 
@@ -876,6 +877,74 @@ var vanguard_milspec = {
 };
 
 
+//eSports 2013 Winter Case
+
+var eSports2013winter_covert_st = {
+  fn : 60,
+  mw : 34.19,
+  ft : 26.91,
+  ww : 26.91,
+  bs : 26.91
+};
+
+var eSports2013winter_covert = {
+  fn : 7.62,
+  mw : 5.07,
+  ft : 4.37,
+  ww : 4.37,
+  bs : 4.37
+};
+
+var eSports2013winter_classified = {
+  fn : 7.113333333,
+  mw : 5.753333333,
+  ft : 5.383333333,
+  ww : 6.516666667,
+  bs : 6.516666667
+};
+
+var eSports2013winter_classified_st = {
+  fn : 37.30333333,
+  mw : 23.68666667,
+  ft : 18.79333333,
+  ww : 25.03333333,
+  bs : 25.03333333
+};
+
+var eSports2013winter_restricted = {
+  fn : 1.66,
+  mw : 1.365,
+  ft : 1.295,
+  ww : 2.055,
+  bs : 2.05
+};
+
+var eSports2013winter_restricted_st = {
+  fn : 9.14,
+  mw : 7.32,
+  ft : 6.39,
+  ww : 7.905,
+  bs : 2.49
+};
+
+var eSports2013winter_milspec_st = {
+  fn : 1.23,
+  mw : 0.942,
+  ft : 0.856,
+  ww : 1.05,
+  bs : 1.57
+};
+
+var eSports2013winter_milspec = {
+  fn : 0.363333333,
+  mw : 0.336,
+  ft : 0.28,
+  ww : 0.4,
+  bs : 0.335
+
+};
+
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -1079,6 +1148,26 @@ var vanguard_st = {
   classified : vanguard_classified_st,
   restricted : vanguard_restricted_st,
   milspec : vanguard_milspec_st,
+  knife : ERSI_knife_st
+
+};
+
+var eSports2013winter = {
+
+  covert : eSports2013winter_covert,
+  classified : eSports2013winter_classified,
+  restricted : eSports2013winter_restricted,
+  milspec : eSports2013winter_milspec,
+  knife : ERSI_knife
+
+};
+
+var eSports2013winter_st = {
+
+  covert : eSports2013winter_covert_st,
+  classified : eSports2013winter_classified_st,
+  restricted : eSports2013winter_restricted_st,
+  milspec : eSports2013winter_milspec_st,
   knife : ERSI_knife_st
 
 };
