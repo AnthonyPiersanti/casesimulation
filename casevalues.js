@@ -7,7 +7,8 @@ var case_prices = {
   shadow : 0.05,
   winter : 1.53,
   phoenix : 0.06,
-  breakout : 0.03
+  breakout : 0.03,
+  bravo : 9.93
 
 };
 
@@ -505,6 +506,73 @@ var phoenix_milspec = {
 
 };
 
+
+// Operation bravo cases
+var bravo_covert_st = {
+  fn : 2447.42,
+  mw : 477,
+  ft : 495,
+  ww : 440,
+  bs : 333
+};
+
+var bravo_covert = {
+  fn : 231.015,
+  mw : 165.19,
+  ft : 215.13,
+  ww : 185.33,
+  bs : 113.3
+};
+
+var bravo_classified = {
+  fn : 56.51,
+  mw : 29.81,
+  ft : 1,
+  ww : 27.43,
+  bs : 34.01
+};
+
+var bravo_classified_st = {
+  fn : 133.3266667,
+  mw : 108.7566667,
+  ft : 69,
+  ww : 107.93,
+  bs : 70.93
+};
+
+var bravo_restricted = {
+  fn : 19.85666667,
+  mw : 4.1525,
+  ft : 3.615,
+  ww : 3.473333333,
+  bs : 3.895
+};
+
+var bravo_restricted_st = {
+  fn : 175.2733333,
+  mw : 18.0475,
+  ft : 10.9925,
+  ww : 10.95666667,
+  bs : 10.95
+};
+
+var bravo_milspec_st = {
+  fn : 24.41833333,
+  mw : 2.16,
+  ft : 1.335,
+  ww : 1.2575,
+  bs : 1.2975
+};
+
+var bravo_milspec = {
+  fn : 3.62,
+  mw : 0.765,
+  ft : 0.561666667,
+  ww : 0.54,
+  bs : 0.5875
+
+};
+
 var breakout_knife_st = {
   fn : 603.412,
   mw : 477.23,
@@ -708,6 +776,26 @@ var phoenix_st = {
   classified : phoenix_classified_st,
   restricted : phoenix_restricted_st,
   milspec : phoenix_milspec_st,
+  knife : ERSI_knife_st
+
+};
+
+var bravo = {
+
+  covert : bravo_covert,
+  classified : bravo_classified,
+  restricted : bravo_restricted,
+  milspec : bravo_milspec,
+  knife : ERSI_knife
+
+};
+
+var bravo_st = {
+
+  covert : bravo_covert_st,
+  classified : bravo_classified_st,
+  restricted : bravo_restricted_st,
+  milspec : bravo_milspec_st,
   knife : ERSI_knife_st
 
 };
