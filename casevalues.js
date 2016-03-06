@@ -13,7 +13,8 @@ var case_prices = {
   falchion : 0.04,
   vanguard : 0.19,
   eSports2013winter : 0.23,
-  revolver : 0.04
+  revolver : 0.04,
+  wildfire : 0.39
 };
 
 var chroma2_milspec = {
@@ -1011,6 +1012,72 @@ var revolver_milspec = {
 
 };
 
+//wildfire case
+
+var wildfire_covert_st = {
+  fn : 207.99,
+  mw : 104.465,
+  ft : 83.41,
+  ww : 63.495,
+  bs : 50.47
+};
+
+var wildfire_covert = {
+  fn : 60.77,
+  mw : 30.42,
+  ft : 20.575,
+  ww : 17.585,
+  bs : 14.975
+};
+
+var wildfire_classified_st = {
+  fn : 67.61,
+  mw : 40.53,
+  ft : 20.81666667,
+  ww : 20.01,
+  bs : 15.9233333
+};
+
+var wildfire_classified = {
+  fn : 15.65333333,
+  mw : 9.92333333,
+  ft : 5.89666667,
+  ww : 4.75,
+  bs : 4.466667
+};
+
+var wildfire_restricted_st = {
+  fn : 12.462,
+  mw : 6.87333333333,
+  ft : 3.44,
+  ww : 2.74166666667,
+  bs : 2.441666667
+};
+
+var wildfire_restricted = {
+  fn : 2.14,
+  mw : 1.34255556,
+  ft : 0.7890222222,
+  ww : 0.5782923,
+  bs : 0.634322
+};
+
+var wildfire_milspec_st = {
+  fn : 6.431,
+  mw : 4.5221,
+  ft : 1.65,
+  ww : 0.889,
+  bs : 0.662134
+};
+
+var wildfire_milspec = {
+  fn : 1.0111,
+  mw : 0.82,
+  ft : 0.802299,
+  ww : 0.21744,
+  bs : 0.14
+};
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -1258,6 +1325,21 @@ var revolver_st = {
 
 };
 
+var wildfire = {
 
+  covert : wildfire_covert,
+  classified : wildfire_classified,
+  restricted : wildfire_restricted,
+  milspec : wildfire_milspec,
+  knife : ERSI_knife
 
+};
 
+var wildfire_st = {
+
+  covert : wildfire_covert_st,
+  classified : wildfire_classified_st,
+  restricted : wildfire_restricted_st,
+  milspec : wildfire_milspec_st,
+  knife : ERSI_knife_st
+};

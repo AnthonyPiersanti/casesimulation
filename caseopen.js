@@ -205,7 +205,7 @@ function openCase(){
 		//knife
 		if (prob >=1 && prob <=21){
 			var s = isStatTrak();
-			if (s == 1){
+			if (s == 6){
 				knife_stat+=1;
 				var wear = getWear();
 				skinval+= caseArrayST["knife"][wear];
@@ -502,7 +502,13 @@ function getCaseArray(case_num){
 			caseArray = revolver;
 			caseArrayST = revolver_st;
 			cval = "revolver";
-			$("#drop_text_cases").html("Revolver Case" + casePrice["revolver"] + " USD <span class=\"caret\"></span></button>");
+			$("#drop_text_cases").html("Revolver Case $" + casePrice["revolver"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 14:
+			caseArray = wildfire;
+			caseArrayST = wildfire_st;
+			cval = "wildfire";
+			$("#drop_text_cases").html("Wildfire Case $" + casePrice["wildfire"] + " USD <span class=\"caret\"></span></button>");
 			break;
 	}
 	
@@ -523,6 +529,7 @@ function addPrices(){
 	$("#vanguard_case").append(" $" + casePrice["vanguard"] + " USD");
 	$("#eSports2013winter_case").append(" $" + casePrice["eSports2013winter"] + " USD");
 	$("#revolver_case").append(" $" + casePrice["revolver"] + " USD");
+	$("#wildfire_case").append(" $" + casePrice["wildfire"] + " USD");
 }
 
 function getWear(){
