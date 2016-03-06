@@ -4,6 +4,8 @@ var case_prices = {
   huntsman : 0.97,
   chroma2 : 0.12,
   csgo1 : 6.86,
+  csgo2 : 0.95,
+  csgo3 : 0.2,
   shadow : 0.05,
   winter : 1.53,
   phoenix : 0.06,
@@ -14,7 +16,9 @@ var case_prices = {
   vanguard : 0.19,
   eSports2013winter : 0.23,
   revolver : 0.04,
-  wildfire : 0.39
+  wildfire : 0.39,
+  eSports2014summer : 0.28,
+  eSports2013 : 7.68
 };
 
 var chroma2_milspec = {
@@ -1078,6 +1082,270 @@ var wildfire_milspec = {
   bs : 0.14
 };
 
+//eSports2014summer case
+
+var eSports2014summer_covert_st = {
+  fn : 220.78,
+  mw : 81.46,
+  ft : 44.255,
+  ww : 37.11,
+  bs : 34.61
+};
+
+var eSports2014summer_covert = {
+  fn : 33.935,
+  mw : 30.42,
+  ft : 6.705,
+  ww : 6.705,
+  bs : 6.265
+};
+
+var eSports2014summer_classified_st = {
+  fn : 72.97,
+  mw : 16.503333,
+  ft : 11.0266666667,
+  ww : 7.735,
+  bs : 6.015
+};
+
+var eSports2014summer_classified = {
+  fn : 17.13,
+  mw : 3.6766666667,
+  ft : 8.25,
+  ww : 3.13,
+  bs : 2.695
+};
+
+var eSports2014summer_restricted_st = {
+  fn : 12.462,
+  mw : 6.87333333333,
+  ft : 3.44,
+  ww : 2.74166666667,
+  bs : 2.441666667
+};
+
+var eSports2014summer_restricted = {
+  fn : 2.14,
+  mw : 1.34255556,
+  ft : 0.7890222222,
+  ww : 0.5782923,
+  bs : 0.634322
+};
+
+var eSports2014summer_milspec_st = {
+  fn : 5.665,
+  mw : 0.99666666667,
+  ft : 1.32,
+  ww : 0.415,
+  bs : 0.395
+};
+
+var eSports2014summer_milspec = {
+  fn : 1.545,
+  mw : 0.29,
+  ft : 0.136,
+  ww : 0.122,
+  bs : 0.16
+};
+
+//eSports2013 case
+
+var eSports2013_covert_st = {
+  fn : 241.46,
+  mw : 241.46,
+  ft : 113.32,
+  ww : 113.32,
+  bs : 113.32
+};
+
+var eSports2013_covert = {
+  fn : 36.29,
+  mw : 36.29,
+  ft : 23.57,
+  ww : 23.57,
+  bs : 23.57
+};
+
+var eSports2013_classified_st = {
+  fn : 135.666,
+  mw : 81.095,
+  ft : 66.355,
+  ww : 49.77,
+  bs : 38.49
+};
+
+var eSports2013_classified = {
+  fn : 107.552,
+  mw : 13.5,
+  ft : 10.4,
+  ww : 6.5,
+  bs : 5.54
+};
+
+var eSports2013_restricted_st = {
+  fn : 166.332,
+  mw : 10.14,
+  ft : 6.475,
+  ww : 6.38,
+  bs : 6.135
+};
+
+var eSports2013_restricted = {
+  fn : 20.57,
+  mw : 3.25,
+  ft : 2.215,
+  ww : 2.59,
+  bs : 2.915
+};
+
+var eSports2013_milspec_st = {
+  fn : 5.665,
+  mw : 0.99666666667,
+  ft : 1.32,
+  ww : 0.415,
+  bs : 0.395
+};
+
+var eSports2013_milspec = {
+  fn : 3.52,
+  mw : 0.68,
+  ft : 0.48,
+  ww : 0.48,
+  bs : 0.48
+};
+
+//csgo2 case
+
+var csgo2_covert_st = {
+  fn : 296.96,
+  mw : 123.74,
+  ft : 100.09,
+  ww : 100.09,
+  bs : 100.09
+};
+
+var csgo2_covert = {
+  fn : 40.59,
+  mw : 24.42,
+  ft : 25.2,
+  ww : 25.2,
+  bs : 25.2
+};
+
+var csgo2_classified_st = {
+  fn : 30.12,
+  mw : 32.145,
+  ft : 32.145,
+  ww : 32.145,
+  bs : 32.145
+};
+
+var csgo2_classified = {
+  fn : 5.13,
+  mw : 4.92,
+  ft : 4.92,
+  ww : 4.92,
+  bs : 4.92
+};
+
+var csgo2_restricted_st = {
+  fn : 35.451,
+  mw : 14.74,
+  ft : 9.255,
+  ww : 7.516,
+  bs : 6.0012
+};
+
+var csgo2_restricted = {
+  fn : 8.9,
+  mw : 2.566,
+  ft : 1.623,
+  ww : 1.36,
+  bs : 0.664
+};
+
+var csgo2_milspec_st = {
+  fn : 10.2309,
+  mw : 2.39,
+  ft : 1.252,
+  ww : 1.22,
+  bs : 0.9924228
+};
+
+var csgo2_milspec = {
+  fn : 2.016,
+  mw : 0.71,
+  ft : 0.66,
+  ww : 0.523,
+  bs : 0.114
+};
+
+//csgo3 case
+
+var csgo3_covert_st = {
+  fn : 162.87,
+  mw : 48.01,
+  ft : 28.22,
+  ww : 51.7,
+  bs : 24.03
+};
+
+var csgo3_covert = {
+  fn : 9.91,
+  mw : 5.94,
+  ft : 4.1,
+  ww : 5.4,
+  bs : 4.0
+};
+
+var csgo3_classified_st = {
+  fn : 22.32,
+  mw : 12.379,
+  ft : 8.72,
+  ww : 11.34,
+  bs : 11.34
+};
+
+var csgo3_classified = {
+  fn : 3.332,
+  mw : 2.59,
+  ft : 2.35,
+  ww : 3.57,
+  bs : 3.57
+};
+
+var csgo3_restricted_st = {
+  fn : 14.18,
+  mw : 4.61,
+  ft : 4.51,
+  ww : 4.96,
+  bs : 4.96
+};
+
+var csgo3_restricted = {
+  fn : 3.98,
+  mw : 1.532,
+  ft : 1.223,
+  ww : 1.032,
+  bs : 0.98
+};
+
+var csgo3_milspec_st = {
+  fn : 28.04,
+  mw : 4.403333333,
+  ft : 2.013333333,
+  ww : 2.88,
+  bs : 2.88
+};
+
+var csgo3_milspec = {
+  fn : 5.52,
+  mw : 1.47,
+  ft : 0.87,
+  ww : 0.25,
+  bs : 0.19
+};
+
 var chroma2 = {
   covert : chroma2_covert,
   classified : chroma2_classified,
@@ -1129,6 +1397,46 @@ var csgo1_st = {
   classified : csgo1_classified_st,
   restricted : csgo1_restricted_st,
   milspec : csgo1_milspec_st,
+  knife : ERSI_knife_st
+
+};
+
+var csgo2 = {
+
+  covert : csgo2_covert,
+  classified : csgo2_classified,
+  restricted : csgo2_restricted,
+  milspec : csgo2_milspec,
+  knife : ERSI_knife
+
+};
+
+var csgo2_st = {
+
+  covert : csgo2_covert_st,
+  classified : csgo2_classified_st,
+  restricted : csgo2_restricted_st,
+  milspec : csgo2_milspec_st,
+  knife : ERSI_knife_st
+
+};
+
+var csgo3 = {
+
+  covert : csgo3_covert,
+  classified : csgo3_classified,
+  restricted : csgo3_restricted,
+  milspec : csgo3_milspec,
+  knife : ERSI_knife
+
+};
+
+var csgo3_st = {
+
+  covert : csgo3_covert_st,
+  classified : csgo3_classified_st,
+  restricted : csgo3_restricted_st,
+  milspec : csgo3_milspec_st,
   knife : ERSI_knife_st
 
 };
@@ -1341,5 +1649,43 @@ var wildfire_st = {
   classified : wildfire_classified_st,
   restricted : wildfire_restricted_st,
   milspec : wildfire_milspec_st,
+  knife : ERSI_knife_st
+};
+
+var eSports2014summer = {
+
+  covert : eSports2014summer_covert,
+  classified : eSports2014summer_classified,
+  restricted : eSports2014summer_restricted,
+  milspec : eSports2014summer_milspec,
+  knife : ERSI_knife
+
+};
+
+var eSports2014summer_st = {
+
+  covert : eSports2014summer_covert_st,
+  classified : eSports2014summer_classified_st,
+  restricted : eSports2014summer_restricted_st,
+  milspec : eSports2014summer_milspec_st,
+  knife : ERSI_knife_st
+};
+
+var eSports2013 = {
+
+  covert : eSports2013_covert,
+  classified : eSports2013_classified,
+  restricted : eSports2013_restricted,
+  milspec : eSports2013_milspec,
+  knife : ERSI_knife
+
+};
+
+var eSports2013_st = {
+
+  covert : eSports2013_covert_st,
+  classified : eSports2013_classified_st,
+  restricted : eSports2013_restricted_st,
+  milspec : eSports2013_milspec_st,
   knife : ERSI_knife_st
 };

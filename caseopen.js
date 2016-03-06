@@ -510,6 +510,30 @@ function getCaseArray(case_num){
 			cval = "wildfire";
 			$("#drop_text_cases").html("Wildfire Case $" + casePrice["wildfire"] + " USD <span class=\"caret\"></span></button>");
 			break;
+		case 15:
+			caseArray = eSports2014summer;
+			caseArrayST = eSports2014summer_st;
+			cval = "eSports2014summer";
+			$("#drop_text_cases").html("eSports 2014 Summer Case $" + casePrice["eSports2013summer"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 16:
+			caseArray = eSports2013;
+			caseArrayST = eSports2013_st;
+			cval = "eSports2013";
+			$("#drop_text_cases").html("eSports 2013 Case $" + casePrice["eSports2013"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 17:
+			caseArray = csgo2;
+			caseArrayST = csgo2_st;
+			cval = "csgo2";
+			$("#drop_text_cases").html("CS:GO Weapons Case 2 $" + casePrice["csgo2"] + " USD <span class=\"caret\"></span></button>");
+			break;
+		case 18:
+			caseArray = csgo3;
+			caseArrayST = csgo3_st;
+			cval = "csgo3";
+			$("#drop_text_cases").html("CS:GO Weapons Case 3 $" + casePrice["csgo3"] + " USD <span class=\"caret\"></span></button>");
+			break;
 	}
 	
 }
@@ -519,6 +543,8 @@ function addPrices(){
 	$("#huntsman_case").append(" $" + casePrice["huntsman"] + " USD");
 	$("#chroma2_case").append(" $" + casePrice["chroma2"] + " USD");
 	$("#csgo1_case").append(" $" + casePrice["csgo1"] + " USD");
+	$("#csgo2_case").append(" $" + casePrice["csgo2"] + " USD");
+	$("#csgo3_case").append(" $" + casePrice["csgo3"] + " USD");
 	$("#winter_case").append(" $" + casePrice["winter"] + " USD");
 	$("#shadow_case").append(" $" + casePrice["shadow"] + " USD");
 	$("#phoenix_case").append(" $" + casePrice["phoenix"] + " USD");
@@ -529,7 +555,9 @@ function addPrices(){
 	$("#vanguard_case").append(" $" + casePrice["vanguard"] + " USD");
 	$("#eSports2013winter_case").append(" $" + casePrice["eSports2013winter"] + " USD");
 	$("#revolver_case").append(" $" + casePrice["revolver"] + " USD");
+	$("#eSports2013_case").append(" $" + casePrice["eSports2013"] + " USD");
 	$("#wildfire_case").append(" $" + casePrice["wildfire"] + " USD");
+	$("#eSports2014summer_case").append(" $" + casePrice["eSports2014summer"] + " USD");
 }
 
 function getWear(){
