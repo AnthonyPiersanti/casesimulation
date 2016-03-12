@@ -22,22 +22,35 @@ var caseArrayST = chroma2_st;
 
 var casePrice = case_prices;
 
-var last_num = 0;
-
-var stop_at = Number.MAX_VALUE;
+var speed = 0;
 
 var cval = "none";
 
 function case_number(num){
-		if(num == -1){
-			stop_at = Number.MAX_VALUE;
-			last_num = stop_at;
-			$("#drop_text").html("Just gonna keep going." + " <span class=\"caret\"></span>");
-		}else{
-			stop_at = num;
-			last_num = stop_at;
-			$("#drop_text").html("Opening " + num + " cases." + " <span class=\"caret\"></span>");
-		}
+			$("#drop_text").html("Opening " + num + " cases per second." + " <span class=\"caret\"></span>");
+			
+			switch (num){
+				case 1:
+					speed = 1000;
+					break;
+					
+				case 5:
+					speed = 200;
+					break;
+					
+				case 10:
+					speed = 100;
+					break;
+					
+				case 50:
+					speed = 20;
+					break;
+					
+				case 100:
+					speed = 10;
+					break;
+				
+			}
 
 	}
   
@@ -45,21 +58,18 @@ function case_number(num){
 function startPause(){
 
 	
-	if (running == 0 && stop_at != 0){
+	if (running == 0){
 		if(cval == "none"){
 			$("#no_case").show();
-			window.setTimeout(function() { $("#no_case").hide(); }, 2500);
+			window.setTimeout(function() { $("#no_case").hide(); }, 3500);
 		}else{
-			running =1;
+			running = 1;
 			increment();
 			document.getElementById("start").innerHTML = "Pause";
-			if(stop_at == Number.MAX_VALUE){
-				$("#drop_text").html("Just gonna keep going." + " <span class=\"caret\"></span>");
-			}
 		}
 	}else{
 		running = 0;
-		stop_at++; //I have no idea why, but I need to do this. Probably race condition or something.
+		speed = 0;
 		document.getElementById("start").innerHTML = "Resume";
 	}
 
@@ -97,8 +107,7 @@ function reset(){
 	knife_stat = 0;
 	document.getElementById("knife_stat_val").innerHTML = 0;
 
-	$("#drop_text").html("Stop at " + "<span class=\"caret\"></span></button>");
-	stop_at = Number.MAX_VALUE;
+	$("#drop_text").html("Speed " + "<span class=\"caret\"></span></button>");
 
 	
 	$("#milspec_mw_val").text(0);
@@ -170,18 +179,17 @@ function increment(){
 	
 	if (running == 1){
 
-		if(stop_at != 0){
-			setTimeout(function(){
-				openCase();
-				stop_at -= 1;
-				increment();
-
-
-			},100)
-		}else{
-			startPause();
-			stop_at = last_num;
+		if(speed == 0){
+			$("#drop_text").html("Opening " + 10 + " cases per second." + " <span class=\"caret\"></span>");
+			speed = 100;
 		}
+
+
+		setTimeout(function(){
+				openCase();
+				increment();
+			}, speed)
+		
 	}
 }
 
