@@ -24,8 +24,6 @@ var casePrice = case_prices;
 
 var speed = 0;
 
-var speed = 100;
-
 var cval = "none";
 
 function case_number(num){
@@ -51,12 +49,6 @@ function case_number(num){
 				case 100:
 					speed = 10;
 					break;
-					
-				case 500:
-					speed = 2;
-					break;
-				
-				
 				
 			}
 
@@ -74,14 +66,10 @@ function startPause(){
 			running = 1;
 			increment();
 			document.getElementById("start").innerHTML = "Pause";
-			if(speed == 0){
-				$("#drop_text").html("Opening " + 10 + " cases per second." + " <span class=\"caret\"></span>");
-				speed = 10;
-
-			}
 		}
 	}else{
 		running = 0;
+		speed = 0;
 		document.getElementById("start").innerHTML = "Resume";
 	}
 
@@ -190,6 +178,12 @@ function reset(){
 function increment(){
 	
 	if (running == 1){
+
+		if(speed == 0){
+			$("#drop_text").html("Opening " + 10 + " cases per second." + " <span class=\"caret\"></span>");
+			speed = 100;
+		}
+
 
 		setTimeout(function(){
 				openCase();
