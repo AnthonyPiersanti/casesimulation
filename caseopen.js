@@ -71,18 +71,16 @@ function startPause(){
 			$("#no_case").show();
 			window.setTimeout(function() { $("#no_case").hide(); }, 3500);
 		}else{
-			running =1;
+			running = 1;
 			increment();
 			document.getElementById("start").innerHTML = "Pause";
 			if(speed == 0){
 				$("#drop_text").html("Opening " + 10 + " cases per second." + " <span class=\"caret\"></span>");
 				speed = 10;
-				speed = 10;
 			}
 		}
 	}else{
 		running = 0;
-		stop_at++; //I have no idea why, but I need to do this. Probably race condition or something.
 		document.getElementById("start").innerHTML = "Resume";
 	}
 
@@ -192,11 +190,10 @@ function increment(){
 	
 	if (running == 1){
 
-			setTimeout(function(){
+		setTimeout(function(){
 				openCase();
 				increment();
 			}, speed)
-			startPause();
 		
 	}
 }
