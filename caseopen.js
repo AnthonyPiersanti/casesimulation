@@ -37,7 +37,7 @@ function case_number(num){
 					break;
 					
 				case 5:
-					speed = 500;
+					speed = 200;
 					break;
 					
 				case 10:
@@ -77,6 +77,7 @@ function startPause(){
 			if(speed == 0){
 				$("#drop_text").html("Opening " + 10 + " cases per second." + " <span class=\"caret\"></span>");
 				speed = 10;
+
 			}
 		}
 	}else{
