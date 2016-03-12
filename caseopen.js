@@ -514,7 +514,7 @@ function getCaseArray(case_num){
 			caseArray = eSports2014summer;
 			caseArrayST = eSports2014summer_st;
 			cval = "eSports2014summer";
-			$("#drop_text_cases").html("eSports 2014 Summer Case $" + casePrice["eSports2013summer"] + " USD <span class=\"caret\"></span></button>");
+			$("#drop_text_cases").html("eSports 2014 Summer Case $" + casePrice["eSports2014summer"] + " USD <span class=\"caret\"></span></button>");
 			break;
 		case 16:
 			caseArray = eSports2013;
